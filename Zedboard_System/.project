@@ -3,10 +3,6 @@
 	<name>Zedboard_System</name>
 	<comment></comment>
 	<projects>
-		<project>FreeRTOS-Combo</project>
-		<project>lvgl</project>
-		<project>support</project>
-		<project>ZynqUSB</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

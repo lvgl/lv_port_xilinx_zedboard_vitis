@@ -3,7 +3,6 @@
 	<name>Zedboard_CPU0</name>
 	<comment>Created by Vitis v2022.1</comment>
 	<projects>
-		<project>Zedboard_Platform</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
