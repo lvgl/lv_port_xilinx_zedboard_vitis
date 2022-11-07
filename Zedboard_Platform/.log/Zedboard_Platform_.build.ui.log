@@ -1,8 +1,12 @@
-2022-11-07T12:22:17.909160600255-12:22:17 **** Build of project Zedboard_Platform ****
-000-buildplatform.bat 16812 Zedboard_Platform  
-000-XSDB Server Channel: tcfchan#1
+2022-11-07T17:42:27.74550400255-17:42:27 **** Build of project Zedboard_Platform ****
+000-buildplatform.bat 21029 Zedboard_Platform  
+000-XSDB Server Channel: tcfchan#2
+000-Cleaning the zynq_fsbl application.
+000-rm -rf  sd.o  nand.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  nor.o  qspi.o  rsa.o  ps7_init.o  pcap.o  fsbl_handoff.o zynq
+000-_fsbl_bsp/ps7_cortexa9_0/lib/libxil.a fsbl.elf *.o
+000-
 000-Building the zynq_fsbl application.
-000-make: Entering directory 'E:/ZeboardTemplate/Zed_WS/Zedboard_Platform/zynq_fsbl/zynq_fsbl_bsp'
+000-make: Entering directory 'E:/ZeboardTemplate/Zed_Git/Zedboard_Platform/zynq_fsbl/zynq_fsbl_bsp'
 000-
 000-make --no-print-directory seq_libs
 000-
@@ -394,16 +398,13 @@
 000-arm-none-eabi-ar: creating ps7_cortexa9_0/lib/libxil.a
 000-'Finished building libraries'
 000-
-000-make: Leaving directory 'E:/ZeboardTemplate/Zed_WS/Zedboard_Platform/zynq_fsbl/zynq_fsbl_bsp'
+000-make: Leaving directory 'E:/ZeboardTemplate/Zed_Git/Zedboard_Platform/zynq_fsbl/zynq_fsbl_bsp'
 000-
 000-arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c sd.c -o sd.o -Izynq_fsbl_bsp/ps7_cort
 000-exa9_0/include -I.
 000-
 000-arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c nand.c -o nand.o -Izynq_fsbl_bsp/ps7_
 000-cortexa9_0/include -I.
-000-
-000-arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c nor.c -o nor.o -Izynq_fsbl_bsp/ps7_co
-000-rtexa9_0/include -I.
 000-
 000-arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c image_mover.c -o image_mover.o -Izynq
 000-_fsbl_bsp/ps7_cortexa9_0/include -I.
@@ -418,6 +419,9 @@
 000-cortexa9_0/include -I.
 000-
 000-arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c rsa.c -o rsa.o -Izynq_fsbl_bsp/ps7_co
+000-rtexa9_0/include -I.
+000-
+000-arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c nor.c -o nor.o -Izynq_fsbl_bsp/ps7_co
 000-rtexa9_0/include -I.
 000-
 000-arm-none-eabi-gcc  -O2 -c -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -c qspi.c -o qspi.o -Izynq_fsbl_bsp/ps7_
@@ -447,11 +451,11 @@
 000-
 000-"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src"
 000-
+000-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src"
+000-
 000-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
 000--eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
 000-ard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
-000-
-000-"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src"
 000-
 000-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-e
 000-abi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=har
@@ -549,11 +553,11 @@
 000-
 000-"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src"
 000-
+000-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src"
+000-
 000-make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
 000-bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
 000- -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns"
-000-
-000-"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src"
 000-
 000-make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_11/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
 000--as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
@@ -860,16 +864,16 @@
 000-RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
 000-files -g -Wall -Wextra -fno-tree-loop-distribute-patterns -DUSE_AMP=1"
 000-
-000-xscugic_hw.c: In function 'DistInit':
-000/Zedboard_Platform136-1-1#warning "Building GIC for AMP" [-Wcpp]1-xscugic_hw.c:136:10: warning: #warning "Building GIC for AMP" [-Wcpp]
-000-  136 |         #warning "Building GIC for AMP"
-000-      |          ^~~~~~~
 000-"Running Make libs in ps7_cortexa9_1/libsrc/scutimer_v2_4/src"
 000-
 000-make -C ps7_cortexa9_1/libsrc/scutimer_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
 000-"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
 000-rtfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns -DUSE_AMP=1"
 000-
+000-xscugic_hw.c: In function 'DistInit':
+000/Zedboard_Platform136-1-1#warning "Building GIC for AMP" [-Wcpp]1-xscugic_hw.c:136:10: warning: #warning "Building GIC for AMP" [-Wcpp]
+000-  136 |         #warning "Building GIC for AMP"
+000-      |          ^~~~~~~
 000-"Running Make libs in ps7_cortexa9_1/libsrc/scuwdt_v2_4/src"
 000-
 000-make -C ps7_cortexa9_1/libsrc/scuwdt_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
@@ -965,5 +969,5 @@
 000-'Finished building libraries'
 000-
 00255-
-12:22:34 Build Finished (took 16s.754ms)
+17:42:52 Build Finished (took 24s.764ms)
 
