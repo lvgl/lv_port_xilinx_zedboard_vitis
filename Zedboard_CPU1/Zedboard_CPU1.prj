@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="Zedboard_CPU1" location="E:/ZeboardTemplate/Zed_WS/Zedboard_CPU1" platform="E:/ZeboardTemplate/Zed_WS/Zedboard_Platform/export/Zedboard_Platform/Zedboard_Platform.xpfm" platformUID="xilinx:zedboard::0.0(custom)" systemProject="Zedboard_System" sysConfig="Zedboard_Platform" runtime="C/C++" cpu="standalone_on_ps7_cortexa9_1" cpuInstance="ps7_cortexa9_1" os="standalone" mssSignature="f00e2f868f9b3e7e99a2c8545b3f5f85">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1017425395" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1722632575" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
