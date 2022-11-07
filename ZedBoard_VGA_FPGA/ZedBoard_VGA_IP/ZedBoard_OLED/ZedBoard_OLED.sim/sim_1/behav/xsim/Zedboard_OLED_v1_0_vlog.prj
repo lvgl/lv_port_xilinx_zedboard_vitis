@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ZedBoard_OLED.srcs/sources_1/new/Delay.v" \
+"../../../../ZedBoard_OLED.srcs/sources_1/new/SpiCtrl.v" \
+"../../../../ZedBoard_OLED.srcs/sources_1/new/ZedboardOLED_v1_0_S00_AXI.v" \
+"../../../../ZedBoard_OLED.srcs/sources_1/new/ZedboardOLED_v1_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Sep 29 12:30:47 2022
+# Process ID: 13280
+# Current directory: E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16212 E:\Work\Vitis\ZynqTemplate\ZedBoard_VGA_FPGA\ZedBoard_VGA.xpr
+# Log file: E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA/vivado.log
+# Journal file: E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA\vivado.jou
+# Running On: PETE-LT, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 34055 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA/ZedBoard_VGA.xpr
+update_compile_order -fileset sources_1

@@ -1,0 +1,8 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Zedboard_OLED_v1_0_behav xil_defaultlib.Zedboard_OLED_v1_0 xil_defaultlib.glbl -log elaborate.log 
+Using 12 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <charLib> not found while processing module instance <CHAR_LIB_COMP> [E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_IP/ZedBoard_OLED/ZedBoard_OLED.srcs/sources_1/new/ZedboardOLED_v1_0_S00_AXI.v:656]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

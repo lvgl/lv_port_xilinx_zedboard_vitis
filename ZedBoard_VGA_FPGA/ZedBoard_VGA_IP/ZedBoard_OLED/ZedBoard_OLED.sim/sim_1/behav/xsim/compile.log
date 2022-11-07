@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_IP/ZedBoard_OLED/ZedBoard_OLED.srcs/sources_1/new/Delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_IP/ZedBoard_OLED/ZedBoard_OLED.srcs/sources_1/new/SpiCtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SpiCtrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_IP/ZedBoard_OLED/ZedBoard_OLED.srcs/sources_1/new/ZedboardOLED_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Zedboard_OLED_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_IP/ZedBoard_OLED/ZedBoard_OLED.srcs/sources_1/new/ZedboardOLED_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Zedboard_OLED_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_IP/ZedBoard_OLED/ZedBoard_OLED.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

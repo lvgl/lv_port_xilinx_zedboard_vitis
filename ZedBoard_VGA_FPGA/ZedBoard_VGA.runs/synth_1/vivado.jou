@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Nov  7 11:58:35 2022
+# Process ID: 17828
+# Current directory: E:/ZeboardTemplate/Zed_Git/ZedBoard_VGA_FPGA/ZedBoard_VGA.runs/synth_1
+# Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: E:/ZeboardTemplate/Zed_Git/ZedBoard_VGA_FPGA/ZedBoard_VGA.runs/synth_1/design_1_wrapper.vds
+# Journal file: E:/ZeboardTemplate/Zed_Git/ZedBoard_VGA_FPGA/ZedBoard_VGA.runs/synth_1\vivado.jou
+# Running On: PETE-LT, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 34055 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

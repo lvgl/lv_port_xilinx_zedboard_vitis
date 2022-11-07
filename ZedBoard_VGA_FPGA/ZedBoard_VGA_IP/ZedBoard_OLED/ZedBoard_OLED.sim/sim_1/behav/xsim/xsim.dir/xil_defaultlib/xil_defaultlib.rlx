@@ -1,0 +1,9 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_IP/ZedBoard_OLED/ZedBoard_OLED.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
+E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_IP/ZedBoard_OLED/ZedBoard_OLED.srcs/sources_1/new/Delay.v,1663845205,verilog,,E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_IP/ZedBoard_OLED/ZedBoard_OLED.srcs/sources_1/new/SpiCtrl.v,,Delay,,,,,,,,
+E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_IP/ZedBoard_OLED/ZedBoard_OLED.srcs/sources_1/new/SpiCtrl.v,1663845078,verilog,,E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_IP/ZedBoard_OLED/ZedBoard_OLED.srcs/sources_1/new/ZedboardOLED_v1_0_S00_AXI.v,,SpiCtrl,,,,,,,,
+E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_IP/ZedBoard_OLED/ZedBoard_OLED.srcs/sources_1/new/ZedboardOLED_v1_0.v,1663845170,verilog,,,,Zedboard_OLED_v1_0,,,,,,,,
+E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_IP/ZedBoard_OLED/ZedBoard_OLED.srcs/sources_1/new/ZedboardOLED_v1_0_S00_AXI.v,1663845140,verilog,,E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_IP/ZedBoard_OLED/ZedBoard_OLED.srcs/sources_1/new/ZedboardOLED_v1_0.v,,Zedboard_OLED_v1_0_S00_AXI,,,,,,,,

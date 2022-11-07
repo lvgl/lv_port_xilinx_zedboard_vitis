@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Sep 22 15:16:05 2022
+# Process ID: 16932
+# Current directory: E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13928 E:\Work\Vitis\ZynqTemplate\ZedBoard_VGA_FPGA\ZedBoard_VGA.xpr
+# Log file: E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA/vivado.log
+# Journal file: E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA\vivado.jou
+# Running On: PETE-LT, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 34055 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA/ZedBoard_VGA.xpr
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA/ZedBoard_VGA_IP [current_project]
+update_ip_catalog
+open_bd_design {E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA/ZedBoard_VGA.srcs/sources_1/bd/design_1/design_1.bd}
+validate_bd_design -force
+report_ip_status -name ip_status 
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+reset_target all [get_files  E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA/ZedBoard_VGA.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects  [get_files  E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA/ZedBoard_VGA.srcs/sources_1/bd/design_1/design_1.bd] -sync -no_script -force -quiet
+generate_target all [get_files  E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA/ZedBoard_VGA.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA/ZedBoard_VGA.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA/ZedBoard_VGA.srcs/sources_1/bd/design_1/design_1.bd] -directory E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA/ZedBoard_VGA.ip_user_files/sim_scripts -ip_user_files_dir E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA/ZedBoard_VGA.ip_user_files -ipstatic_source_dir E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA/ZedBoard_VGA.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA/ZedBoard_VGA.cache/compile_simlib/modelsim} {questa=E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA/ZedBoard_VGA.cache/compile_simlib/questa} {riviera=E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA/ZedBoard_VGA.cache/compile_simlib/riviera} {activehdl=E:/Work/Vitis/ZynqTemplate/ZedBoard_VGA_FPGA/ZedBoard_VGA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1

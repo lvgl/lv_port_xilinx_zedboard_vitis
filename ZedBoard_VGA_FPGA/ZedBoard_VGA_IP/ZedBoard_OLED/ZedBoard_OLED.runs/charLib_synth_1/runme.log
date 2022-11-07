@@ -1,0 +1,19 @@
+
+*** Running vivado
+    with args -log charLib.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source charLib.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script 'E:/Xilinx/Vivado/2022.1/scripts/Vivado_init.tcl'
+source charLib.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -string {{PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY}}  -new_severity {WARNING} '. The existing rule will be replaced.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/work/vitis/zynqtemplate/zedboard_vga_ip/zedboard_oled/zedboard_oled.srcs/sources_1/new'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP charLib, cache-ID = 4ef7ba9349d73786.
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 22 12:53:11 2022...
