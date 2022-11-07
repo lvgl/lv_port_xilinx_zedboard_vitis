@@ -57,7 +57,7 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/support/include}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\include&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:\..\Zed_GitSubs\FreeRTOS-Kernel\include}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
                                     									
@@ -97,7 +97,9 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\include&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/support/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:\..\Zed_GitSubs\FreeRTOS-Kernel\include}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
                                     									
@@ -111,7 +113,7 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;E:\ZeboardTemplate\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
                                     								
@@ -197,7 +199,7 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/support/include}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\include&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:\..\Zed_GitSubs\FreeRTOS-Kernel\include}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
                                     									
@@ -237,7 +239,9 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\include&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/support/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:\..\Zed_GitSubs\FreeRTOS-Kernel\include}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
                                     									
@@ -251,7 +255,7 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;E:\ZeboardTemplate\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
                                     								
