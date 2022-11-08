@@ -55,11 +55,11 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\lvgl\src&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\lvgl\src&quot;"/>
                                     								
                                 </option>
                                 								
-                                <option id="xilinx.gnu.compiler.symbols.defined.1226576" superClass="xilinx.gnu.compiler.symbols.defined" valueType="definedSymbols">
+                                <option id="xilinx.gnu.compiler.symbols.defined.1226576" name="Defined symbols (-D)" superClass="xilinx.gnu.compiler.symbols.defined" valueType="definedSymbols">
                                     									
                                     <listOptionValue builtIn="false" value="LV_CONF_INCLUDE_SIMPLE"/>
                                     								
@@ -147,11 +147,11 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\lvgl\src&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\lvgl\src&quot;"/>
                                     								
                                 </option>
                                 								
-                                <option id="xilinx.gnu.compiler.symbols.defined.1771404823" superClass="xilinx.gnu.compiler.symbols.defined" useByScannerDiscovery="false" valueType="definedSymbols">
+                                <option id="xilinx.gnu.compiler.symbols.defined.1771404823" name="Defined symbols (-D)" superClass="xilinx.gnu.compiler.symbols.defined" useByScannerDiscovery="false" valueType="definedSymbols">
                                     									
                                     <listOptionValue builtIn="false" value="LV_CONF_INCLUDE_SIMPLE"/>
                                     								

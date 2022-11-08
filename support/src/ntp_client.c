@@ -14,7 +14,7 @@
 
 #include "queue.h"
 
-extern shared_memp_t		shmem_p;
+//extern shared_memp_t		shmem_p;
 extern config_datp_t		conf_p;
 extern cpu0_globals_t		*cpu0_globals;
 
@@ -107,7 +107,7 @@ void set_time_from_NTP_task( void *is_task ) {
 			_settimeofday( &now, NULL );
 			localtime_r( (time_t*)&now.tv_sec, &rtc );
 //			update_rtc_from_user( &rtc );
-			msg.id = INF_NTPC_UPD_IDU;
+			msg.id = INF_NTPC_UPD_INT;
 			q_sysmsg( &msg );
 		}else {
 			msg.id = INF_NTPC_SYNCOK;

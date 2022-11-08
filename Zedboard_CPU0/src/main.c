@@ -133,11 +133,20 @@ static void startup_thread( void *p ) {
 	retry = NET_WAIT;	/* Wait to see if network interface comes up */
 	while((!( FreeRTOS_IsNetworkUp() && cpu0_globals->net_started && xGetPhyLinkStatus() )) && --retry ) vTaskDelay(pdMS_TO_TICKS(10));
 
-	/* If the network is up attempt to update local time from Internet */
-	xil_printf( "Info: Get time from Internet if possible.\r\n");
-	uint8_t is_task = pdFALSE;
-	if( retry ) set_time_from_NTP_task( &is_task );
-	while( uxQueueMessagesWaiting( cpu0_globals->sysmsg_q ) ) vTaskDelay(pdMS_TO_TICKS(10));
+	if( retry ) {
+		/* If the network is up attempt to update local time from Internet */
+		xil_printf( "Info: Get time from Internet if possible.\r\n");
+		msg.id = INFO_GET_NET_TIME;
+		q_sysmsg( &msg );
+		uint8_t is_task = pdFALSE;
+		set_time_from_NTP_task( &is_task );
+	} else {
+		xil_printf( "Error: Network did not come up with in 10 Seconds!\r\n");
+	}
+
+	tusb_init();
+	msg.id = SPAWN_USB;
+	q_spawn_req( &msg );
 
 	msg.id = INF_LOADING_MAIN;
 	q_sysmsg( &msg );
@@ -146,10 +155,6 @@ static void startup_thread( void *p ) {
 	msg.id = LOAD_MAIN_GUI;
 	q_gui_msg( &msg );
 	while( uxQueueMessagesWaiting( cpu0_globals->gui.msg_q ) ) vTaskDelay(pdMS_TO_TICKS(10));
-
-	tusb_init();
-	msg.id = SPAWN_USB;
-	q_spawn_req( &msg );
 
 	msg.id = SPAWN_SUPV0;
 	q_spawn_req( &msg );

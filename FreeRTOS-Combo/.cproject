@@ -45,11 +45,11 @@
                             							
                             <tool id="xilinx.gnu.armv7.c.toolchain.compiler.staticlib.debug.2118356877" name="ARM v7 gcc compiler" superClass="xilinx.gnu.armv7.c.toolchain.compiler.staticlib.debug">
                                 								
-                                <option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.284827090" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+                                <option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.284827090" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
                                 								
                                 <option id="xilinx.gnu.compiler.option.debugging.level.2101142828" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
                                 								
-                                <option id="xilinx.gnu.compiler.misc.other.637965405" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+                                <option id="xilinx.gnu.compiler.misc.other.637965405" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
                                 								
                                 <option id="xilinx.gnu.compiler.dircategory.includes.1688948576" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" useByScannerDiscovery="false" valueType="includePath">
                                     									
@@ -57,31 +57,31 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/support/include}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\include&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${resolvePlatformFile:project=FreeRTOS-Combo,fileType=bspInclude}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Kernel\include&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\include&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\lvgl\src&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\portable\GCC\ARM_CA9&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\portable\common&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\include&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\Compiler\GCC&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Kernel\portable\GCC\ARM_CA9&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\portable\common&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\Compiler\GCC&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
                                     								
                                 </option>
                                 								
-                                <option id="xilinx.gnu.compiler.inferred.swplatform.includes.1926644409" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" useByScannerDiscovery="false" valueType="includePath">
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${resolvePlatformFile:project=FreeRTOS-Combo,fileType=bspInclude}&quot;"/>
-                                    								
-                                </option>
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.includes.1926644409" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" useByScannerDiscovery="false" valueType="includePath"/>
                                 								
                                 <inputType id="xilinx.gnu.armv7.c.compiler.input.1375592376" name="C source files" superClass="xilinx.gnu.armv7.c.compiler.input"/>
                                 							
@@ -99,23 +99,27 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/support/include}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:\..\Zed_GitSubs\FreeRTOS-Kernel\include}&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${resolvePlatformFile:project=FreeRTOS-Combo,fileType=bspInclude}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Kernel\include&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\include&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\lvgl\src&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\portable\GCC\ARM_CA9&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\portable\common&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\include&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\Compiler\GCC&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Kernel\portable\GCC\ARM_CA9&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\portable\common&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\Compiler\GCC&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
                                     								
                                 </option>
                                 								
@@ -142,6 +146,8 @@
             </storageModule>
             			
             <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+            			
+            <storageModule moduleId="ilg.gnuarmeclipse.managedbuild.packs"/>
             		
         </cconfiguration>
         		
@@ -199,31 +205,31 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/support/include}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\include&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${resolvePlatformFile:project=FreeRTOS-Combo,fileType=bspInclude}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Kernel\include&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\include&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\lvgl\src&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\portable\GCC\ARM_CA9&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\portable\common&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\include&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\Compiler\GCC&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Kernel\portable\GCC\ARM_CA9&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\portable\common&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\Compiler\GCC&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
                                     								
                                 </option>
                                 								
-                                <option id="xilinx.gnu.compiler.inferred.swplatform.includes.1085901760" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${resolvePlatformFile:project=FreeRTOS-Combo,fileType=bspInclude}&quot;"/>
-                                    								
-                                </option>
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.includes.1085901760" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath"/>
                                 								
                                 <inputType id="xilinx.gnu.armv7.c.compiler.input.862103987" name="C source files" superClass="xilinx.gnu.armv7.c.compiler.input"/>
                                 							
@@ -241,23 +247,27 @@
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/support/include}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:\..\Zed_GitSubs\FreeRTOS-Kernel\include}&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${resolvePlatformFile:project=FreeRTOS-Combo,fileType=bspInclude}&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Kernel\include&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\include&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\lvgl\src&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\portable\GCC\ARM_CA9&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\portable\common&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\include&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\Compiler\GCC&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Kernel\portable\GCC\ARM_CA9&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\portable\common&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\Compiler\GCC&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
                                     								
                                 </option>
                                 								
@@ -344,5 +354,7 @@
     </storageModule>
     	
     <storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+    	
+    <storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
     
 </cproject>

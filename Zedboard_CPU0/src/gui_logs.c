@@ -10,9 +10,9 @@
 #include "ff_headers.h"
 #include "ff_stdio.h"
 
-extern shared_memp_t		shmem_p;
-extern config_datp_t		conf_p;
-extern cpu0_globals_t		*cpu0_globals;
+//extern shared_memp_t		shmem_p;
+//extern config_datp_t		conf_p;
+//extern cpu0_globals_t		*cpu0_globals;
 
 static lv_obj_t			*log_ta = NULL;
 static lv_obj_t			*log_btn_clr;

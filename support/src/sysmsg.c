@@ -62,7 +62,7 @@ sysmsg_t sys_msgs[] =  {
 	{ ERR_NTPC_SOCKTO, log_msg_error, log_cat_ntp, pdTRUE, pdTRUE, pdTRUE, "Setting client socket timeout!" },
 	{ ERR_NTPC_SOCKWR, log_msg_error, log_cat_ntp, pdTRUE, pdTRUE, pdTRUE, "Writing to client socket!" },
 	{ ERR_NTPC_SOCKRDTO, log_msg_error, log_cat_ntp, pdTRUE, pdTRUE, pdTRUE, "Client timed out, getting time, will retry!" },
-	{ INF_NTPC_UPD_IDU, log_msg_info, log_cat_ntp, pdFALSE, pdTRUE, pdTRUE, "Client updated real time clock from Internet" },
+	{ INF_NTPC_UPD_INT, log_msg_info, log_cat_ntp, pdFALSE, pdTRUE, pdTRUE, "Client updated real time clock from Internet" },
 	{ INF_NTPC_SYNCOK, log_msg_info, log_cat_ntp, pdFALSE, pdTRUE, pdTRUE, "Client reports clock is already synchronised..." },
 	{ ERR_NTPC_MULTITO_FAIL, log_msg_error, log_cat_ntp, pdTRUE, pdTRUE, pdTRUE, "Error: NTP:  Maximum client timeouts reached - time not set from NTP server!" },
 	{ ERR_GUILOG_ALLOC_FAIL, log_msg_error, log_cat_gui, pdTRUE, pdTRUE, pdTRUE, "Failed to allocate GUI Log memory!" },
@@ -83,6 +83,7 @@ sysmsg_t sys_msgs[] =  {
 	{ INF_FTP_CON_CLOSE, log_msg_info, log_cat_ftp, pdTRUE, pdTRUE, pdTRUE, "Session ended." },
 	{ INF_FTP_FILE_DELETED, log_msg_info, log_cat_ftp, pdTRUE, pdTRUE, pdTRUE, "File Deleted: " },
 	{ INF_USB_EVENT, log_msg_info, log_cat_usb, pdTRUE, pdTRUE, pdTRUE, "USB Event: " },
+	{ INFO_GET_NET_TIME, log_msg_info, log_cat_startup, pdFALSE, pdTRUE, pdFALSE, "Attempting to get time from Internet" },
 	{ LOG_DB_END, log_msg_none, log_cat_none, pdFALSE, pdFALSE, pdFALSE, ""  } // MUST STAY LAST ENTRY!!!  ORDER of rest not crucial.
 };
 

@@ -45,7 +45,7 @@
 #define ERR_NTPC_SOCKRDTO			0x012D
 #define INF_NTPC_CLKUPD			0x012E
 #define INF_NTPC_SYNCOK			0x012F
-#define INF_NTPC_UPD_IDU			0x0158
+#define INF_NTPC_UPD_INT			0x0158
 #define ERR_GUILOG_ALLOC_FAIL		0x0130
 #define INF_USR_REBOOT			0x0133
 #define INF_REBOOT_INPROG			0x0134
@@ -67,8 +67,7 @@
 #define INF_FTP_CON_CLOSE			0x0162
 #define INF_FTP_FILE_DELETED		0x0163
 #define INF_USB_EVENT				0x0164
-#define INF_VNC_CON_OPEN			0x0165
-#define INF_VNC_CON_CLOSE			0x0166
+#define INFO_GET_NET_TIME			0x0165
 
 #define LOG_DB_END					0x7FFF		// End of textual type messages defined in database do not use this ID
 
