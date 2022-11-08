@@ -13,7 +13,7 @@ There is a very basic implementation of USB HID for keyboard, mouse and touch sc
 https://github.com/hathach/tinyusb
 I have modified this code to work with the 'Zynq' in a non-cached way and created a couple of source files which contain the 'Zynq' specific implementation.
 
-I have implemented a basic tab based GUI which enables configuration of the basics for a FreeRTOS +TCP/IP based system along with the primary colour of the GUI and the Dark/Light theme.  There is an SD based file system using FreeRTOS +FAT on which a rudimentary log system has been implemented.  There is an basic FTP server, enabling access to the file system to collect the log and configuration file, it also enables the update of the BOOT.BIN file on the system for firmware update.  I have implementated the LVGL widgets demo on a tab in the GUI also.  There is a 'System Info' tab which shows the FreeRTOS tasks and stats this is not particularly great for a production system though as it is quite CPU hungry.
+I have implemented a basic tab based GUI which enables configuration of the basics for a FreeRTOS +TCP/IP based system along with the primary colour of the GUI and the Dark/Light theme.  There is an SD based file system using FreeRTOS +FAT on which a rudimentary log system has been implemented.  There is a basic FTP server, enabling access to the file system to collect the log and configuration file, it also enables the update of the BOOT.BIN file on the system for firmware update.  I have implementated the LVGL widgets demo on a tab in the GUI also.  There is a 'System Info' tab which shows the FreeRTOS tasks and stats this is not particularly great for a production system though as it is quite CPU hungry.
 
 **To get started with the project.** 
 Required Hardware:

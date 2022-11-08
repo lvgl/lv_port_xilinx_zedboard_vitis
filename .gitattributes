@@ -1,0 +1,3 @@
+*.html linguist-detectable=false
+*.vhd linguist-detectable=false
+*.vhdl linguist-detectable=false
