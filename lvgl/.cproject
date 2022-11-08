@@ -35,7 +35,7 @@
                             							
                             <targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.armv7" id="xilinx.armv7.lib.target.gnu.base.debug.1023649125" isAbstract="false" name="Debug Platform" superClass="xilinx.armv7.lib.target.gnu.base.debug"/>
                             							
-                            <builder buildPath="${workspace_loc:/lvgl}/Debug" enableAutoBuild="true" id="xilinx.gnu.armv7.toolchain.builder.staticlib.debug.754312099" managedBuildOn="true" name="GNU make.Debug" superClass="xilinx.gnu.armv7.toolchain.builder.staticlib.debug"/>
+                            <builder buildPath="${workspace_loc:/lvgl}/Debug" enableAutoBuild="true" id="xilinx.gnu.armv7.toolchain.builder.staticlib.debug.754312099" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU make" parallelBuildOn="true" parallelizationNumber="optimal" superClass="xilinx.gnu.armv7.toolchain.builder.staticlib.debug"/>
                             							
                             <tool id="xilinx.gnu.armv7.c.toolchain.assembler.staticlib.debug.716452654" name="ARM v7 gcc assembler" superClass="xilinx.gnu.armv7.c.toolchain.assembler.staticlib.debug">
                                 								
@@ -45,11 +45,25 @@
                             							
                             <tool id="xilinx.gnu.armv7.c.toolchain.compiler.staticlib.debug.717010124" name="ARM v7 gcc compiler" superClass="xilinx.gnu.armv7.c.toolchain.compiler.staticlib.debug">
                                 								
-                                <option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.2063839544" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+                                <option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.2063839544" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
                                 								
-                                <option id="xilinx.gnu.compiler.option.debugging.level.1144432833" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+                                <option id="xilinx.gnu.compiler.option.debugging.level.1144432833" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
                                 								
-                                <option id="xilinx.gnu.compiler.misc.other.786457151" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+                                <option id="xilinx.gnu.compiler.misc.other.786457151" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+                                								
+                                <option id="xilinx.gnu.compiler.dircategory.includes.1554401733" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\lvgl\src&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.compiler.symbols.defined.1226576" superClass="xilinx.gnu.compiler.symbols.defined" valueType="definedSymbols">
+                                    									
+                                    <listOptionValue builtIn="false" value="LV_CONF_INCLUDE_SIMPLE"/>
+                                    								
+                                </option>
                                 								
                                 <inputType id="xilinx.gnu.armv7.c.compiler.input.76729537" name="C source files" superClass="xilinx.gnu.armv7.c.compiler.input"/>
                                 							
@@ -57,9 +71,9 @@
                             							
                             <tool id="xilinx.gnu.armv7.cxx.toolchain.compiler.staticlib.debug.1785155246" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.toolchain.compiler.staticlib.debug">
                                 								
-                                <option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.1027396798" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+                                <option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.1027396798" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
                                 								
-                                <option id="xilinx.gnu.compiler.option.debugging.level.2069719233" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+                                <option id="xilinx.gnu.compiler.option.debugging.level.2069719233" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
                                 							
                             </tool>
                             							
@@ -113,7 +127,7 @@
                             							
                             <targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.arm.a53.x32" id="xilinx.armv7.lib.target.gnu.base.release.1948072797" isAbstract="false" name="Release Platform" superClass="xilinx.armv7.lib.target.gnu.base.release"/>
                             							
-                            <builder buildPath="${workspace_loc:/lvgl}/Release" enableAutoBuild="true" id="xilinx.gnu.armv7.toolchain.builder.staticlib.release.1394286654" managedBuildOn="true" name="GNU make.Release" superClass="xilinx.gnu.armv7.toolchain.builder.staticlib.release"/>
+                            <builder buildPath="${workspace_loc:/lvgl}/Release" enableAutoBuild="true" id="xilinx.gnu.armv7.toolchain.builder.staticlib.release.1394286654" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU make" parallelBuildOn="true" parallelizationNumber="optimal" superClass="xilinx.gnu.armv7.toolchain.builder.staticlib.release"/>
                             							
                             <tool id="xilinx.gnu.armv7.c.toolchain.assembler.staticlib.release.2079994952" name="ARM v7 gcc assembler" superClass="xilinx.gnu.armv7.c.toolchain.assembler.staticlib.release">
                                 								
@@ -123,11 +137,25 @@
                             							
                             <tool id="xilinx.gnu.armv7.c.toolchain.compiler.staticlib.release.1241531133" name="ARM v7 gcc compiler" superClass="xilinx.gnu.armv7.c.toolchain.compiler.staticlib.release">
                                 								
-                                <option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.1234305876" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+                                <option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.1234305876" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
                                 								
-                                <option id="xilinx.gnu.compiler.option.debugging.level.306243706" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+                                <option id="xilinx.gnu.compiler.option.debugging.level.306243706" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
                                 								
-                                <option id="xilinx.gnu.compiler.misc.other.83311405" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+                                <option id="xilinx.gnu.compiler.misc.other.83311405" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+                                								
+                                <option id="xilinx.gnu.compiler.dircategory.includes.713433398" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" useByScannerDiscovery="false" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\lvgl\src&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.compiler.symbols.defined.1771404823" superClass="xilinx.gnu.compiler.symbols.defined" useByScannerDiscovery="false" valueType="definedSymbols">
+                                    									
+                                    <listOptionValue builtIn="false" value="LV_CONF_INCLUDE_SIMPLE"/>
+                                    								
+                                </option>
                                 								
                                 <inputType id="xilinx.gnu.armv7.c.compiler.input.2112579696" name="C source files" superClass="xilinx.gnu.armv7.c.compiler.input"/>
                                 							
@@ -135,9 +163,9 @@
                             							
                             <tool id="xilinx.gnu.armv7.cxx.toolchain.compiler.staticlib.release.1478765009" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.toolchain.compiler.staticlib.release">
                                 								
-                                <option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.57613935" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+                                <option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.57613935" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
                                 								
-                                <option id="xilinx.gnu.compiler.option.debugging.level.1962641978" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+                                <option id="xilinx.gnu.compiler.option.debugging.level.1962641978" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
                                 							
                             </tool>
                             							
@@ -198,5 +226,23 @@
         </scannerConfigBuildInfo>
         	
     </storageModule>
+    	
+    <storageModule moduleId="refreshScope" versionNumber="2">
+        		
+        <configuration configurationName="Debug">
+            			
+            <resource resourceType="PROJECT" workspacePath="/lvgl"/>
+            		
+        </configuration>
+        		
+        <configuration configurationName="Release">
+            			
+            <resource resourceType="PROJECT" workspacePath="/lvgl"/>
+            		
+        </configuration>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
     
 </cproject>

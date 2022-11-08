@@ -35,7 +35,7 @@
                             							
                             <targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.armv7" id="xilinx.armv7.lib.target.gnu.base.debug.778937446" isAbstract="false" name="Debug Platform" superClass="xilinx.armv7.lib.target.gnu.base.debug"/>
                             							
-                            <builder buildPath="${workspace_loc:/support}/Debug" enableAutoBuild="true" id="xilinx.gnu.armv7.toolchain.builder.staticlib.debug.1066015946" managedBuildOn="true" name="GNU make.Debug" superClass="xilinx.gnu.armv7.toolchain.builder.staticlib.debug"/>
+                            <builder buildPath="${workspace_loc:/support}/Debug" enableAutoBuild="true" id="xilinx.gnu.armv7.toolchain.builder.staticlib.debug.1066015946" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU make" parallelBuildOn="true" parallelizationNumber="optimal" superClass="xilinx.gnu.armv7.toolchain.builder.staticlib.debug"/>
                             							
                             <tool id="xilinx.gnu.armv7.c.toolchain.assembler.staticlib.debug.1025256555" name="ARM v7 gcc assembler" superClass="xilinx.gnu.armv7.c.toolchain.assembler.staticlib.debug">
                                 								
@@ -45,11 +45,59 @@
                             							
                             <tool id="xilinx.gnu.armv7.c.toolchain.compiler.staticlib.debug.455565573" name="ARM v7 gcc compiler" superClass="xilinx.gnu.armv7.c.toolchain.compiler.staticlib.debug">
                                 								
-                                <option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.446043445" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+                                <option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.446043445" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
                                 								
-                                <option id="xilinx.gnu.compiler.option.debugging.level.1315572160" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+                                <option id="xilinx.gnu.compiler.option.debugging.level.1315572160" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
                                 								
-                                <option id="xilinx.gnu.compiler.misc.other.847669926" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+                                <option id="xilinx.gnu.compiler.misc.other.847669926" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+                                								
+                                <option id="xilinx.gnu.compiler.dircategory.includes.622854782" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" useByScannerDiscovery="false" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/lvgl}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/ZynqUSB}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/support/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/ZynqUSB/tinyusb}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS-Combo}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\lvgl\src&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/Zedboard_CPU0/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\portable\GCC\ARM_CA9&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\portable\common&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\Compiler\GCC&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.includes.1459493114" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" useByScannerDiscovery="false" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${resolvePlatformFile:project=FreeRTOS-Combo,fileType=bspInclude}&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.compiler.symbols.defined.812881267" name="Defined symbols (-D)" superClass="xilinx.gnu.compiler.symbols.defined" useByScannerDiscovery="false" valueType="definedSymbols">
+                                    									
+                                    <listOptionValue builtIn="false" value="LV_CONF_INCLUDE_SIMPLE"/>
+                                    								
+                                </option>
                                 								
                                 <inputType id="xilinx.gnu.armv7.c.compiler.input.1266890506" name="C source files" superClass="xilinx.gnu.armv7.c.compiler.input"/>
                                 							
@@ -57,9 +105,47 @@
                             							
                             <tool id="xilinx.gnu.armv7.cxx.toolchain.compiler.staticlib.debug.1099015397" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.toolchain.compiler.staticlib.debug">
                                 								
-                                <option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.2071821407" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+                                <option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.2071821407" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
                                 								
-                                <option id="xilinx.gnu.compiler.option.debugging.level.1303691481" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+                                <option id="xilinx.gnu.compiler.option.debugging.level.1303691481" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+                                								
+                                <option id="xilinx.gnu.compiler.dircategory.includes.395957513" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/lvgl}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/ZynqUSB}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/support/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS-Combo}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\lvgl\src&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\portable\GCC\ARM_CA9&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\portable\common&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\Compiler\GCC&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.includes.1419415730" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${resolvePlatformFile:project=FreeRTOS-Combo,fileType=bspInclude}&quot;"/>
+                                    								
+                                </option>
                                 							
                             </tool>
                             							
@@ -113,7 +199,7 @@
                             							
                             <targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.arm.a53.x32" id="xilinx.armv7.lib.target.gnu.base.release.1085399847" isAbstract="false" name="Release Platform" superClass="xilinx.armv7.lib.target.gnu.base.release"/>
                             							
-                            <builder buildPath="${workspace_loc:/support}/Release" enableAutoBuild="true" id="xilinx.gnu.armv7.toolchain.builder.staticlib.release.922509107" managedBuildOn="true" name="GNU make.Release" superClass="xilinx.gnu.armv7.toolchain.builder.staticlib.release"/>
+                            <builder buildPath="${workspace_loc:/support}/Release" enableAutoBuild="true" id="xilinx.gnu.armv7.toolchain.builder.staticlib.release.922509107" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU make" parallelBuildOn="true" parallelizationNumber="optimal" superClass="xilinx.gnu.armv7.toolchain.builder.staticlib.release"/>
                             							
                             <tool id="xilinx.gnu.armv7.c.toolchain.assembler.staticlib.release.1599398861" name="ARM v7 gcc assembler" superClass="xilinx.gnu.armv7.c.toolchain.assembler.staticlib.release">
                                 								
@@ -123,11 +209,51 @@
                             							
                             <tool id="xilinx.gnu.armv7.c.toolchain.compiler.staticlib.release.1788421192" name="ARM v7 gcc compiler" superClass="xilinx.gnu.armv7.c.toolchain.compiler.staticlib.release">
                                 								
-                                <option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.1958578267" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+                                <option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.1958578267" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
                                 								
-                                <option id="xilinx.gnu.compiler.option.debugging.level.49655934" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+                                <option id="xilinx.gnu.compiler.option.debugging.level.49655934" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
                                 								
-                                <option id="xilinx.gnu.compiler.misc.other.760051067" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+                                <option id="xilinx.gnu.compiler.misc.other.760051067" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
+                                								
+                                <option id="xilinx.gnu.compiler.dircategory.includes.41609340" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/lvgl}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/ZynqUSB}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/support/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/ZynqUSB/tinyusb}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS-Combo}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\lvgl\src&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\portable\GCC\ARM_CA9&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\portable\common&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\Compiler\GCC&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.includes.1264979662" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${resolvePlatformFile:project=FreeRTOS-Combo,fileType=bspInclude}&quot;"/>
+                                    								
+                                </option>
                                 								
                                 <inputType id="xilinx.gnu.armv7.c.compiler.input.881401083" name="C source files" superClass="xilinx.gnu.armv7.c.compiler.input"/>
                                 							
@@ -135,9 +261,47 @@
                             							
                             <tool id="xilinx.gnu.armv7.cxx.toolchain.compiler.staticlib.release.1302465002" name="ARM v7 g++ compiler" superClass="xilinx.gnu.armv7.cxx.toolchain.compiler.staticlib.release">
                                 								
-                                <option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.1422501994" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+                                <option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.1422501994" name="Optimization Level" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
                                 								
-                                <option id="xilinx.gnu.compiler.option.debugging.level.453588639" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+                                <option id="xilinx.gnu.compiler.option.debugging.level.453588639" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+                                								
+                                <option id="xilinx.gnu.compiler.dircategory.includes.1004544673" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/lvgl}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/ZynqUSB}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/support/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS-Combo}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\lvgl\src&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\portable\GCC\ARM_CA9&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\portable\common&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\Compiler\GCC&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.includes.1235617242" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${resolvePlatformFile:project=FreeRTOS-Combo,fileType=bspInclude}&quot;"/>
+                                    								
+                                </option>
                                 							
                             </tool>
                             							
@@ -198,5 +362,23 @@
         </scannerConfigBuildInfo>
         	
     </storageModule>
+    	
+    <storageModule moduleId="refreshScope" versionNumber="2">
+        		
+        <configuration configurationName="Debug">
+            			
+            <resource resourceType="PROJECT" workspacePath="/support"/>
+            		
+        </configuration>
+        		
+        <configuration configurationName="Release">
+            			
+            <resource resourceType="PROJECT" workspacePath="/support"/>
+            		
+        </configuration>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
     
 </cproject>

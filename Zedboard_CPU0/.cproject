@@ -59,6 +59,46 @@
                                 								
                                 <option id="xilinx.gnu.compiler.misc.other.982427586" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
                                 								
+                                <option id="xilinx.gnu.compiler.dircategory.includes.1377125950" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" useByScannerDiscovery="false" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/ZynqUSB}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/support/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/ZynqUSB/tinyusb}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS-Combo}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\lvgl\src&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\portable\GCC\ARM_CA9&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\portable\common&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\Compiler\GCC&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.compiler.symbols.defined.1921224019" name="Defined symbols (-D)" superClass="xilinx.gnu.compiler.symbols.defined" valueType="definedSymbols">
+                                    									
+                                    <listOptionValue builtIn="false" value="LV_CONF_INCLUDE_SIMPLE"/>
+                                    								
+                                </option>
+                                								
                                 <inputType id="xilinx.gnu.armv7.c.compiler.input.1988061421" name="C source files" superClass="xilinx.gnu.armv7.c.compiler.input"/>
                                 							
                             </tool>
@@ -72,6 +112,36 @@
                                 <option id="xilinx.gnu.compiler.inferred.swplatform.includes.1195641263" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="${resolvePlatformFile:project=Zedboard_CPU0,fileType=bspInclude}"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.compiler.dircategory.includes.1190713169" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/support/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS-Combo}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\lvgl\src&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\portable\GCC\ARM_CA9&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\portable\common&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\Compiler\GCC&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
                                     								
                                 </option>
                                 							
@@ -95,7 +165,31 @@
                                 								
                                 <option id="xilinx.gnu.c.linker.option.lscript.1118993162" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" value="../src/lscript.ld" valueType="string"/>
                                 								
-                                <option id="xilinx.gnu.c.link.option.ldflags.1326235575" name="Linker Flags" superClass="xilinx.gnu.c.link.option.ldflags" value=" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec" valueType="string"/>
+                                <option id="xilinx.gnu.c.link.option.ldflags.1326235575" name="Linker Flags" superClass="xilinx.gnu.c.link.option.ldflags" useByScannerDiscovery="false" value=" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec  -Wl,--start-group -Wl,-Map=output.map" valueType="string"/>
+                                								
+                                <option id="xilinx.gnu.c.link.option.libs.477347105" name="Libraries (-l)" superClass="xilinx.gnu.c.link.option.libs" useByScannerDiscovery="false" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="support"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="ZynqUSB"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="FreeRTOS-Combo"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="lvgl"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.c.link.option.paths.661125235" name="Library search path (-L)" superClass="xilinx.gnu.c.link.option.paths" useByScannerDiscovery="false" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/lvgl/Debug}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/support/Debug}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/ZynqUSB/Debug}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS-Combo/Debug}&quot;"/>
+                                    								
+                                </option>
                                 								
                                 <inputType id="xilinx.gnu.linker.input.1881715808" superClass="xilinx.gnu.linker.input">
                                     									
@@ -124,6 +218,8 @@
                                 </option>
                                 								
                                 <option id="xilinx.gnu.c.linker.option.lscript.127413164" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" value="../src/lscript.ld" valueType="string"/>
+                                								
+                                <option id="xilinx.gnu.c.link.option.ldflags.209381940" name="Linker Flags" superClass="xilinx.gnu.c.link.option.ldflags" value=" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec  -Wl,--start-group -Wl,-Map=output.map" valueType="string"/>
                                 							
                             </tool>
                             							
@@ -132,6 +228,52 @@
                         </toolChain>
                         					
                     </folderInfo>
+                    					
+                    <fileInfo id="xilinx.gnu.armv7.exe.debug.1176681100.547320387" name="gui_main.c" rcbsApplicability="disable" resourcePath="src/gui_main.c" toolsToInvoke="xilinx.gnu.armv7.c.toolchain.compiler.debug.618592241.1390747019">
+                        						
+                        <tool id="xilinx.gnu.armv7.c.toolchain.compiler.debug.618592241.1390747019" name="ARM v7 gcc compiler" superClass="xilinx.gnu.armv7.c.toolchain.compiler.debug.618592241">
+                            							
+                            <option id="xilinx.gnu.compiler.dircategory.includes.57946905" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:/lvgl}&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:/ZynqUSB}&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:/support/include}&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:/ZynqUSB/tinyusb}&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS-Combo}&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\lvgl\src&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\include&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\include&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\portable\GCC\ARM_CA9&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\portable\common&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\Compiler\GCC&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
+                                							
+                            </option>
+                            							
+                            <inputType id="xilinx.gnu.armv7.c.compiler.input.1829817002" name="C source files" superClass="xilinx.gnu.armv7.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
                     					
                     <sourceEntries>
                         						
@@ -203,6 +345,42 @@
                                 								
                                 <option id="xilinx.gnu.compiler.misc.other.1157578874" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard" valueType="string"/>
                                 								
+                                <option id="xilinx.gnu.compiler.dircategory.includes.56200479" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" useByScannerDiscovery="false" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/support/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS-Combo}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\lvgl\src&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\portable\GCC\ARM_CA9&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\portable\common&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\Compiler\GCC&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.compiler.symbols.defined.1942252060" name="Defined symbols (-D)" superClass="xilinx.gnu.compiler.symbols.defined" useByScannerDiscovery="false" valueType="definedSymbols">
+                                    									
+                                    <listOptionValue builtIn="false" value="LV_CONF_INCLUDE_SIMPLE"/>
+                                    								
+                                </option>
+                                								
                                 <inputType id="xilinx.gnu.armv7.c.compiler.input.665728217" name="C source files" superClass="xilinx.gnu.armv7.c.compiler.input"/>
                                 							
                             </tool>
@@ -216,6 +394,36 @@
                                 <option id="xilinx.gnu.compiler.inferred.swplatform.includes.1330849201" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="${resolvePlatformFile:project=Zedboard_CPU0,fileType=bspInclude}"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.compiler.dircategory.includes.1451082143" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/support/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS-Combo}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\lvgl\src&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\include&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\portable\GCC\ARM_CA9&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\portable\common&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\Compiler\GCC&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
                                     								
                                 </option>
                                 							
@@ -239,7 +447,31 @@
                                 								
                                 <option id="xilinx.gnu.c.linker.option.lscript.523679536" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" value="../src/lscript.ld" valueType="string"/>
                                 								
-                                <option id="xilinx.gnu.c.link.option.ldflags.1011300141" name="Linker Flags" superClass="xilinx.gnu.c.link.option.ldflags" value=" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec" valueType="string"/>
+                                <option id="xilinx.gnu.c.link.option.ldflags.1011300141" name="Linker Flags" superClass="xilinx.gnu.c.link.option.ldflags" value=" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec  -Wl,--start-group -Wl,-Map=output.map" valueType="string"/>
+                                								
+                                <option id="xilinx.gnu.c.link.option.paths.1393327337" name="Library search path (-L)" superClass="xilinx.gnu.c.link.option.paths" useByScannerDiscovery="false" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/lvgl/Releaase}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/support/Releaase}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/ZynqUSB/Releaase}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS-Combo/Releaase}&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.c.link.option.libs.886595512" name="Libraries (-l)" superClass="xilinx.gnu.c.link.option.libs" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="lvgl"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="support"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="ZynqUSB"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="FreeRTOS-Combo"/>
+                                    								
+                                </option>
                                 								
                                 <inputType id="xilinx.gnu.linker.input.223643884" superClass="xilinx.gnu.linker.input">
                                     									
@@ -268,6 +500,8 @@
                                 </option>
                                 								
                                 <option id="xilinx.gnu.c.linker.option.lscript.1626721356" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" value="../src/lscript.ld" valueType="string"/>
+                                								
+                                <option id="xilinx.gnu.c.link.option.ldflags.91877359" name="Linker Flags" superClass="xilinx.gnu.c.link.option.ldflags" value=" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec  -Wl,--start-group -Wl,-Map=output.map" valueType="string"/>
                                 							
                             </tool>
                             							
@@ -276,6 +510,52 @@
                         </toolChain>
                         					
                     </folderInfo>
+                    					
+                    <fileInfo id="xilinx.gnu.armv7.exe.release.31628958.759213197" name="gui_main.c" rcbsApplicability="disable" resourcePath="src/gui_main.c" toolsToInvoke="xilinx.gnu.armv7.c.toolchain.compiler.release.525223677.994736771">
+                        						
+                        <tool id="xilinx.gnu.armv7.c.toolchain.compiler.release.525223677.994736771" name="ARM v7 gcc compiler" superClass="xilinx.gnu.armv7.c.toolchain.compiler.release.525223677">
+                            							
+                            <option id="xilinx.gnu.compiler.dircategory.includes.418118438" superClass="xilinx.gnu.compiler.dircategory.includes" useByScannerDiscovery="false" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:/lvgl}&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:/ZynqUSB}&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:/support/include}&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:/ZynqUSB/tinyusb}&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:/FreeRTOS-Combo}&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\lvgl\src&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\include&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\include&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\include&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Kernel\portable\GCC\ARM_CA9&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\Lab-Project-FreeRTOS-FAT\portable\common&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\Compiler\GCC&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\Zynq&quot;"/>
+                                								
+                                <listOptionValue builtIn="false" value="&quot;${workspace_loc:}\..\Zed_GitSubs\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
+                                							
+                            </option>
+                            							
+                            <inputType id="xilinx.gnu.armv7.c.compiler.input.756109501" name="C source files" superClass="xilinx.gnu.armv7.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
                     					
                     <sourceEntries>
                         						
@@ -346,5 +626,7 @@
         </configuration>
         	
     </storageModule>
+    	
+    <storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
     
 </cproject>
