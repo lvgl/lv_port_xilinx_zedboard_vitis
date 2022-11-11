@@ -25,7 +25,7 @@
 /* PJBES Defines */
 #define LV_HOR_RES_MAX			(1024)
 #define LV_VER_RES_MAX			(768)
-#define LV_VGA_DDR_DMA_BASE		0x0F000000		// This is the DDR address the DMA hardware fetches VGA pixel data from (32MB is reserved)
+#define LV_VGA_DDR_DMA_BASE		0x0F000000		// This is the DDR address the DMA hardware fetches VGA pixel data from (16MB is reserved)
 #define LV_VDB_ADR          		LV_VGA_DDR_DMA_BASE
 #define LV_VDB2_ADR         		(LV_VGA_DDR_DMA_BASE + (((LV_HOR_RES_MAX * LV_VER_RES_MAX)*LV_COLOR_DEPTH)>>3))
 
