@@ -27,8 +27,12 @@ Zedboard with SD card installed, a USB mouse can be used with a VGA compatable m
 https://www.waveshare.com/product/displays/lcd-oled/lcd-oled-1/13.3inch-hdmi-lcd-h-with-case.htm \
 https://www.waveshare.com/product/displays/lcd-oled/lcd-oled-1/15.6inch-hdmi-lcd-h-with-case.htm \
 **NOTE: for Waveshare screens VGA connection, this cable is also required:**
-https://www.waveshare.com/Mini-HDMI-Male-to-VGA-Female-Cable.htm
-You will very likely need a usb OTG adapter to attach a mouse or touch screen.  
+https://www.waveshare.com/Mini-HDMI-Male-to-VGA-Female-Cable.htm  
+
+**You will very likely need a usb OTG adapter to adapt the microusb OTG socket to USB-A socket for a mouse or touch screen.**  
+
+The ZedBoard should have the jumpers configured as per the this image:  
+![image](./rmassets/Zedboard.png)  
 
 ### ***Here is a 'suggested' approach to adding the project to the Xilinx Vitis development environment.***
 
@@ -133,7 +137,7 @@ Hit 'Yes' on the next message box to continue.
 
 You are now ready to either create a debug session and load the code over jtag into the Zedboard the via 'PROG' USB connector.  
 ### ***How to create a debug session***
-Open Debug Configurations and create a 'New launch configuration':  
+Open Debug Configurations and highlight **TCF Single Application Debug** then click **New launch configuration** button:  
 ![image](./rmassets/VitisDbg.png)
 ![image](./rmassets/VitisDbg1.png)  
 Click Application tab and tick ps7_cortexa9_1  
@@ -142,10 +146,10 @@ Click Target Setup tab and check it looks like this:
 ![image](./rmassets/VitisDbg3.png)  
 Now hit the 'Debug' button and the application will start, if the FPGA is running okay you will see the 8 LEDS on the Zedboard turn into an 8-bit binary counter and start flashing.  
 ![image](./rmassets/VitisDbg4.png)  
-Now start the two cpu cores running by clicking on each one in the window and pressing the Resume button, the software should begin to execute...  
+Now start the two cpu cores running, core 0 followed by core 1 (Note: wait a few seconds after starting core 0 before starting core 1), by clicking on each core under the APU entry in the debug window and pressing the Resume button, the software should begin to execute...  
 
-You can also copy the **'ZedBoard_System\Debug\sd_card\BOOT.BIN'** file to the root of your SD card then insert it into the Zedboard and it should boot the project.
+If you would prefer to just boot the system from the SD card you can copy the **'ZedBoard_System\Debug\sd_card\BOOT.BIN'** file to the root of your SD card then insert it into the Zedboard power up and it should boot the project providing you have set jumpers on the Zedboard as mentioned at the beginning of this document.
 
-You can connect a serial terminal @ 115200 BAUD to the USB UART port on the Zedboard to see various status and debug messages during boot and operation.
+You can connect a serial terminal @ 115200 BAUD (N 8 1) to the USB UART port on the Zedboard to see various status and debug messages during boot and operation.
 
 ***NOTE: If you need to edit the fabric/Zynq configuration or add to the project, I have also included the Vivado project here in the folder 'Zedboard_VGA_FPGA' it is not easy to make this work well with Github and Vivado but if you take the folder structure and copy it to your work area and open the Vivado project it should work.  You may need to set up the user repository so it can see the IP projects in the main folder.***
