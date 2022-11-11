@@ -36,14 +36,14 @@ This approach allows the project to connect to the various git repositories on l
 
 The project is set up to work with the following directory structure choosing your own name and location for the Project_Root_Folder(for this example we are using 'E:\ZedTemplate'), **Note: the subfolder names must be as specified here for the relative paths to work in the Vitis environment)**:
 
-Go ahead and create the root folder of your own name and path for the project and add the subfolders 'Zed_GitSubs' and 'Zed_WS' (Note: The 'Zed_Git' Folder will be created by Vitis later.)
-
+Go ahead and create the root folder of your own name and path for the project and add the subfolders 'Zed_GitSubs' and 'Zed_WS' (Note: The 'Zed_Git' Folder will be created by Vitis later.)  
 ![image](./rmassets/Folders.png)  
 			  
-### ***1. Open the Xilinx Vitis environment and specify a new workspace as per the description above.***
+### ***1. Open the Xilinx Vitis environment and specify a new workspace.***
 ![image](./rmassets/VitisWS.png)
 
-### ***2. Open the Vitis Git perspective and add the submodules one at a time selecting 'Clone a Git repository'(Tip: If you copy the url for the repository prior to clicking 'Clone a Git repository it will automatically fill in the next window for you):***
+### ***2. Open the Vitis Git perspective and add the submodules one at a time.***
+   By selecting 'Clone a Git repository'(Tip: If you copy the url for the repository prior to clicking 'Clone a Git repository it will automatically fill in the next window for you):  
 ![image](./rmassets/VitisGit.png)  
 **Firstly the FreeRTOS Kernel**  
 https://github.com/FreeRTOS/FreeRTOS-Kernel.git  
