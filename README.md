@@ -13,7 +13,13 @@ There is a very basic implementation of USB HID for keyboard, mouse and touch sc
 https://github.com/hathach/tinyusb
 I have modified this code to work with the 'Zynq' in a non-cached way and created a couple of source files which contain the 'Zynq' specific implementation.
 
-I have implemented a basic tab based GUI which enables configuration of the basics for a FreeRTOS +TCP/IP based system along with the primary colour of the GUI and the Dark/Light theme.  There is an SD based file system using FreeRTOS +FAT on which a rudimentary log system has been implemented.  There is a basic FTP server, enabling access to the file system to collect the log and configuration file, it also enables the update of the BOOT.BIN file on the system for firmware update.  I have implementated the LVGL widgets demo modified to run on a tab in the GUI also.  There is a 'System Info' tab which shows the FreeRTOS tasks and stats this is not particularly great for a production system though as it is quite CPU hungry.
+## Parts of the implementation:  
+
+1. A basic tab based GUI which enables configuration of the basics for a FreeRTOS +TCP/IP based system along with the primary colour of the GUI and the Dark/Light theme.
+2. An SD based file system using FreeRTOS +FAT on which a rudimentary log system has been implemented.
+3. A basic FTP server, enabling access to the file system to collect the log and configuration file, it also enables the update of the BOOT.BIN file on the system for firmware update.
+4. I have implementated the LVGL widgets demo modified to run on a tab in the GUI also.  
+5. There is a 'System Info' tab which shows the FreeRTOS tasks and stats.
 
 ## **A walk through to get started with the project.** 
 Required Hardware:
@@ -22,8 +28,9 @@ https://www.waveshare.com/product/displays/lcd-oled/lcd-oled-1/13.3inch-hdmi-lcd
 https://www.waveshare.com/product/displays/lcd-oled/lcd-oled-1/15.6inch-hdmi-lcd-h-with-case.htm \
 **NOTE: for Waveshare screens VGA connection, this cable is also required:**
 https://www.waveshare.com/Mini-HDMI-Male-to-VGA-Female-Cable.htm
-You will very likely need a usb OTG adapter to attach a mouse or touch screen. 
-***Here is a 'suggested' approach to adding the project to the Xilinx Vitis development environment.***
+You will very likely need a usb OTG adapter to attach a mouse or touch screen.  
+
+### ***Here is a 'suggested' approach to adding the project to the Xilinx Vitis development environment.***
 
 This approach allows the project to connect to the various git repositories on line that are required and maintain links to the currently checked out versions of the third party libraries etc.
 
@@ -31,7 +38,7 @@ The project is set up to work with the following directory structure choosing yo
 
 Go ahead and create the root folder of your own name and path for the project and add the subfolders 'Zed_GitSubs' and 'Zed_WS' (Note: The 'Zed_Git' Folder will be created by Vitis later.)
 
-![image](./rmassets/Folders.png)
+![image](./rmassets/Folders.png)  
 			  
 ### ***1. Open the Xilinx Vitis environment and specify a new workspace as per the description above.***
 ![image](./rmassets/VitisWS.png)
