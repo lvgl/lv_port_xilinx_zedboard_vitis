@@ -1,5 +1,5 @@
 # Zedboard VGA template project
-Due to being very grateful for the existence of open source projects such as FreeRTOS, LVGL and TinyUSB, this is an implementation of asymetrical multi-processing (AMP) FreeRTOS +TCP +FAT with LVGL graphics library driving custom a 'VGA' IP implemented in the FPGA fabric for the Zedboard.  I just wanted to give something back to the community and hopefully this will prove a useful template for the Zedboard/Xilinx Zynq 7000 platform. See: https://www.avnet.com/wps/portal/us/products/avnet-boards/avnet-board-families/zedboard/ and: https://www.xilinx.com/products/silicon-devices/soc/zynq-7000.html
+Due to being very grateful for the existence of open source projects such as FreeRTOS, LVGL and TinyUSB, this is an implementation of asymetrical multi-processing (AMP) FreeRTOS +TCP +FAT with LVGL graphics library driving a custom 'VGA IP' implemented in the FPGA fabric for the Zedboard.  I just wanted to give something back to the community and hopefully this will prove a useful template for the Zedboard/Xilinx Zynq 7000 platform. See: https://www.avnet.com/wps/portal/us/products/avnet-boards/avnet-board-families/zedboard/ and: https://www.xilinx.com/products/silicon-devices/soc/zynq-7000.html
 
 ## **Notes about implementation**
 
@@ -18,8 +18,9 @@ I have modified this code to work with the 'Zynq' in a non-cached way and create
 1. A basic tab based GUI which enables configuration of the basics for a FreeRTOS +TCP/IP based system along with the primary colour of the GUI and the Dark/Light theme.
 2. An SD based file system using FreeRTOS +FAT on which a rudimentary log system has been implemented.
 3. A basic FTP server, enabling access to the file system to collect the log and configuration file, it also enables the update of the BOOT.BIN file on the system for firmware update.
-4. I have implementated the LVGL widgets demo modified to run on a tab in the GUI also.  
-5. There is a 'System Info' tab which shows the FreeRTOS tasks and stats.
+4. A basic NTP Client and Server application.
+5. I have implementated the LVGL widgets demo modified to run on a tab in the GUI also.  
+6. There is a 'System Info' tab which shows the FreeRTOS tasks and stats.
 
 ## **A walk through to get started with the project.** 
 Required Hardware:
