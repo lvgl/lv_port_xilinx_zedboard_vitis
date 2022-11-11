@@ -121,13 +121,13 @@ Hit 'Yes' on the next message box to continue.
 ![image](./rmassets/VitisCPerPIok.png)  
 
 ### ***6. Build all the projects under the Zedboard_System tree, libraries first, as follows:***
-a. Build 'FreeRTOS-Combo'. (FreeRTOS combined Kernel/TCP/FAT library)
-b. Build 'lvgl'. (LVGL Graphics Library)
-c. Build 'support'. (Home grown support library)
-d. Build 'ZynqUSB'.	(Adapted version of TinyUSB library)
-e. Build 'Zedboard_CPU0'. (Project for ARM Core 0 Code)
-f. Build 'Zedboard_CPU1'. (Project for ARM Core 1 Code)
-g. Build 'Zedboard_System'. (System Project will generated BOOT.BIN file)
+- Build 'FreeRTOS-Combo'. (FreeRTOS combined Kernel/TCP/FAT library)
+- Build 'lvgl'. (LVGL Graphics Library)
+- Build 'support'. (Home grown support library)
+- Build 'ZynqUSB'.	(Adapted version of TinyUSB library)
+- Build 'Zedboard_CPU0'. (Project for ARM Core 0 Code)
+- Build 'Zedboard_CPU1'. (Project for ARM Core 1 Code)
+- Build 'Zedboard_System'. (System Project will generated BOOT.BIN file)
 
 **Note: There are a number of benign warnings generated during the project builds these can be safely ignored.**
 
