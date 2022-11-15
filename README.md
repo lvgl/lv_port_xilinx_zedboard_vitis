@@ -33,6 +33,14 @@ I have modified this code to work with the 'Zynq' in a non-cached way and create
 5. I have implementated the LVGL widgets demo modified to run on a tab in the GUI also.  
 6. There is a 'System Info' tab which shows the FreeRTOS tasks and stats.
 
+## Some screenshots:
+![image](./rmassets/screen1_1024x768.jpg)  
+![image](./rmassets/screen2_1024x768.jpg)  
+![image](./rmassets/screen3_1024x768.jpg)  
+![image](./rmassets/screen4_1024x768.jpg)  
+![image](./rmassets/screen5_1024x768.jpg)  
+![image](./rmassets/screen6_1024x768.jpg)  
+
 ## **A walk through to get started with the project.** 
 Required Hardware:
 Zedboard with SD card installed, a USB mouse can be used with a VGA compatable monitor connected to the Zedboard VGA connector, or a Touch screen connected to the VGA port and the USB port (See links below for Waveshare(Ilitek touch) screens I have used.) \
