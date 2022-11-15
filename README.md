@@ -8,11 +8,11 @@ https://github.com/FreeRTOS/FreeRTOS-Kernel.git
 https://github.com/FreeRTOS/FreeRTOS-Plus-TCP.git  
 **Lab-Project-FreeRTOS-FAT**  
 https://github.com/FreeRTOS/Lab-Project-FreeRTOS-FAT.git  
-**The light and versatile grafphics library**  
+**The light and versatile graphics library (LVGL)**  
 https://github.com/lvgl/lvgl  
 **Tiny USB**  
 https://github.com/hathach/tinyusb
-## **Notes about implementation**
+## **Notes about the implementation**
 
 ***ARM Core 0*** runs an instance of FreeRTOS implementing the FAT file system, the TCP/IP stack and the graphics library.
 
