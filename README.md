@@ -1,6 +1,17 @@
 # Zedboard VGA template project
 Being very grateful for the existence of open source projects such as FreeRTOS, LVGL and TinyUSB, this is an implementation of asymetrical multi-processing (AMP) FreeRTOS +TCP +FAT with LVGL graphics library driving a custom 'VGA IP' implemented in the FPGA fabric for the Zedboard.  I just wanted to give something back to the community and hopefully this will prove a useful template for the Zedboard/Xilinx Zynq 7000 platform. See: https://www.avnet.com/wps/portal/us/products/avnet-boards/avnet-board-families/zedboard/ and: https://www.xilinx.com/products/silicon-devices/soc/zynq-7000.html
 
+## **Reference Projects**
+**FreeRTOS Kernel**  
+https://github.com/FreeRTOS/FreeRTOS-Kernel.git  
+**FreeRTOS-Plus-TCP**  
+https://github.com/FreeRTOS/FreeRTOS-Plus-TCP.git  
+**Lab-Project-FreeRTOS-FAT**  
+https://github.com/FreeRTOS/Lab-Project-FreeRTOS-FAT.git  
+**The light and versatile grafphics library**  
+https://github.com/lvgl/lvgl  
+**Tiny USB**  
+https://github.com/hathach/tinyusb
 ## **Notes about implementation**
 
 ***ARM Core 0*** runs an instance of FreeRTOS implementing the FAT file system, the TCP/IP stack and the graphics library.
@@ -83,7 +94,7 @@ Select the path to the Zed_GitSubs directory click Finish>
 When the clone is complete you will see the repository in the list:  
 ![image](./rmassets/VitisGitFRFPst.png)  
 **Now the LVGL library**  
-https://github.com/FreeRTOS/FreeRTOS-Kernel.git  
+https://github.com/lvgl/lvgl 
 ![image](./rmassets/VitisGitFRFPst1.png)  
 ![image](./rmassets/VitisGitLVGL.png)  
 Click Next>  
