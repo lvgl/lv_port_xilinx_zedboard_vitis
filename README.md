@@ -51,7 +51,7 @@ https://www.waveshare.com/Mini-HDMI-Male-to-VGA-Female-Cable.htm
 
 **You will very likely need a usb OTG adapter to adapt the microusb OTG socket to USB-A socket for a mouse or touch screen.**  
 
-The ZedBoard should have the jumpers configured as per the this image + PLEASE ADD JP2 for OTG is HOST Mode to enable USB Power out:  
+The ZedBoard should have the jumpers configured as per the image below + PLEASE ADD JP2 for OTG is HOST Mode to enable USB Power out:  
 ![image](./rmassets/Zedboard.png)  
 
 ### ***Here is a 'suggested' approach to adding the project to the Xilinx Vitis development environment.***
