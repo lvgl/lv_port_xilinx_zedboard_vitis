@@ -107,7 +107,7 @@ https://github.com/lvgl/lvgl
 ![image](./rmassets/VitisGitLVGL.png)  
 Click Next>  
 ![image](./rmassets/VitisGitLVGL1.png)  
-Select master and click Next>  
+Select release/v8.3 (NOT MASTER FOR NOW! - Will update this once v9 becomes stable) and click Next>  
 ![image](./rmassets/VitisGitLVGL2.png)  
 Select the path to the Zed_GitSubs directory click Finish>  
 When the clone is complete you will see the repository in the list:  
