@@ -87,7 +87,7 @@
                                 								
                                 <option id="xilinx.gnu.compiler.inferred.swplatform.includes.630411605" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${resolvePlatformFile:project=ZynqUSB,fileType=bspInclude}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=ZynqUSB,fileType=bspInclude}"/>
                                     								
                                 </option>
                                 								
@@ -103,7 +103,7 @@
                                 								
                                 <option id="xilinx.gnu.compiler.inferred.swplatform.includes.1229151389" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${resolvePlatformFile:project=ZynqUSB,fileType=bspInclude}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=ZynqUSB,fileType=bspInclude}"/>
                                     								
                                 </option>
                                 								
@@ -145,9 +145,37 @@
                             							
                             <tool id="xilinx.gnu.armv7.toolchain.archiver.staticlib.debug.1298889630" name="ARM v7 archiver" superClass="xilinx.gnu.armv7.toolchain.archiver.staticlib.debug"/>
                             							
-                            <tool id="xilinx.gnu.armv7.c.toolchain.linker.1811775896" name="ARM v7 gcc linker" superClass="xilinx.gnu.armv7.c.toolchain.linker"/>
+                            <tool id="xilinx.gnu.armv7.c.toolchain.linker.1811775896" name="ARM v7 gcc linker" superClass="xilinx.gnu.armv7.c.toolchain.linker">
+                                								
+                                <option id="xilinx.gnu.linker.inferred.swplatform.lpath.1181020428" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=ZynqUSB,fileType=bspLib}"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.linker.inferred.swplatform.flags.1413577638" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,--end-group"/>
+                                    								
+                                </option>
+                                							
+                            </tool>
                             							
-                            <tool id="xilinx.gnu.armv7.cxx.toolchain.linker.1743768270" name="ARM v7 g++ linker" superClass="xilinx.gnu.armv7.cxx.toolchain.linker"/>
+                            <tool id="xilinx.gnu.armv7.cxx.toolchain.linker.1743768270" name="ARM v7 g++ linker" superClass="xilinx.gnu.armv7.cxx.toolchain.linker">
+                                								
+                                <option id="xilinx.gnu.linker.inferred.swplatform.lpath.387087172" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=ZynqUSB,fileType=bspLib}"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.linker.inferred.swplatform.flags.970285546" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,--end-group"/>
+                                    								
+                                </option>
+                                							
+                            </tool>
                             						
                         </toolChain>
                         					
@@ -245,7 +273,7 @@
                                 								
                                 <option id="xilinx.gnu.compiler.inferred.swplatform.includes.371324756" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${resolvePlatformFile:project=ZynqUSB,fileType=bspInclude}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=ZynqUSB,fileType=bspInclude}"/>
                                     								
                                 </option>
                                 								
@@ -261,7 +289,7 @@
                                 								
                                 <option id="xilinx.gnu.compiler.inferred.swplatform.includes.316750898" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${resolvePlatformFile:project=ZynqUSB,fileType=bspInclude}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=ZynqUSB,fileType=bspInclude}"/>
                                     								
                                 </option>
                                 								
@@ -303,9 +331,37 @@
                             							
                             <tool id="xilinx.gnu.armv7.toolchain.archiver.statclib.release.1912010975" name="ARM v7 archiver" superClass="xilinx.gnu.armv7.toolchain.archiver.statclib.release"/>
                             							
-                            <tool id="xilinx.gnu.armv7.c.toolchain.linker.1419753308" name="ARM v7 gcc linker" superClass="xilinx.gnu.armv7.c.toolchain.linker"/>
+                            <tool id="xilinx.gnu.armv7.c.toolchain.linker.1419753308" name="ARM v7 gcc linker" superClass="xilinx.gnu.armv7.c.toolchain.linker">
+                                								
+                                <option id="xilinx.gnu.linker.inferred.swplatform.lpath.1054943385" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=ZynqUSB,fileType=bspLib}"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.linker.inferred.swplatform.flags.1117084107" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,--end-group"/>
+                                    								
+                                </option>
+                                							
+                            </tool>
                             							
-                            <tool id="xilinx.gnu.armv7.cxx.toolchain.linker.125924136" name="ARM v7 g++ linker" superClass="xilinx.gnu.armv7.cxx.toolchain.linker"/>
+                            <tool id="xilinx.gnu.armv7.cxx.toolchain.linker.125924136" name="ARM v7 g++ linker" superClass="xilinx.gnu.armv7.cxx.toolchain.linker">
+                                								
+                                <option id="xilinx.gnu.linker.inferred.swplatform.lpath.2130690478" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=ZynqUSB,fileType=bspLib}"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.linker.inferred.swplatform.flags.380659240" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,--end-group"/>
+                                    								
+                                </option>
+                                							
+                            </tool>
                             						
                         </toolChain>
                         					
