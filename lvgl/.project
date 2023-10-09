@@ -25,6 +25,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>src</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>src/core</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
@@ -35,22 +40,17 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>src/extra</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>src/font</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
 			<name>src/hal</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/layouts</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/libs</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
@@ -80,19 +80,14 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/others</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/themes</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
 			<name>src/widgets</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>src/core/lv_core.mk</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/core/lv_core.mk</locationURI>
 		</link>
 		<link>
 			<name>src/core/lv_disp.c</name>
@@ -250,11 +245,6 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/draw/gd32_ipa</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
 			<name>src/draw/lv_draw.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/lv_draw.c</locationURI>
@@ -263,6 +253,11 @@
 			<name>src/draw/lv_draw.h</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/lv_draw.h</locationURI>
+		</link>
+		<link>
+			<name>src/draw/lv_draw.mk</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/lv_draw.mk</locationURI>
 		</link>
 		<link>
 			<name>src/draw/lv_draw_arc.c</name>
@@ -390,6 +385,11 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>src/draw/renesas</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>src/draw/sdl</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
@@ -410,6 +410,56 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>src/extra/README.md</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/README.md</locationURI>
+		</link>
+		<link>
+			<name>src/extra/layouts</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>src/extra/lv_extra.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/lv_extra.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/lv_extra.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/lv_extra.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/lv_extra.mk</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/lv_extra.mk</locationURI>
+		</link>
+		<link>
+			<name>src/extra/others</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>src/extra/themes</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>src/font/korean.ttf</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/font/korean.ttf</locationURI>
+		</link>
+		<link>
 			<name>src/font/lv_font.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/font/lv_font.c</locationURI>
@@ -418,6 +468,11 @@
 			<name>src/font/lv_font.h</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/font/lv_font.h</locationURI>
+		</link>
+		<link>
+			<name>src/font/lv_font.mk</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/font/lv_font.mk</locationURI>
 		</link>
 		<link>
 			<name>src/font/lv_font_dejavu_16_persian_hebrew.c</name>
@@ -585,6 +640,11 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/hal/lv_hal.h</locationURI>
 		</link>
 		<link>
+			<name>src/hal/lv_hal.mk</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/hal/lv_hal.mk</locationURI>
+		</link>
+		<link>
 			<name>src/hal/lv_hal_disp.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/hal/lv_hal_disp.c</locationURI>
@@ -613,66 +673,6 @@
 			<name>src/hal/lv_hal_tick.h</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/hal/lv_hal_tick.h</locationURI>
-		</link>
-		<link>
-			<name>src/layouts/flex</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/layouts/grid</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/libs/bmp</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/libs/ffmpeg</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/libs/freetype</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/libs/fsdrv</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/libs/gif</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/libs/png</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/libs/qrcode</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/libs/rlottie</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/libs/sjpg</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/libs/tiny_ttf</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
 			<name>src/misc/lv_anim.c</name>
@@ -790,16 +790,6 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/misc/lv_lru.h</locationURI>
 		</link>
 		<link>
-			<name>src/misc/lv_malloc_builtin.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/misc/lv_malloc_builtin.c</locationURI>
-		</link>
-		<link>
-			<name>src/misc/lv_malloc_builtin.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/misc/lv_malloc_builtin.h</locationURI>
-		</link>
-		<link>
 			<name>src/misc/lv_math.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/misc/lv_math.c</locationURI>
@@ -820,14 +810,9 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/misc/lv_mem.h</locationURI>
 		</link>
 		<link>
-			<name>src/misc/lv_memcpy_builtin.c</name>
+			<name>src/misc/lv_misc.mk</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/misc/lv_memcpy_builtin.c</locationURI>
-		</link>
-		<link>
-			<name>src/misc/lv_memcpy_builtin.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/misc/lv_memcpy_builtin.h</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/misc/lv_misc.mk</locationURI>
 		</link>
 		<link>
 			<name>src/misc/lv_printf.c</name>
@@ -925,229 +910,174 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/misc/lv_utils.h</locationURI>
 		</link>
 		<link>
-			<name>src/others/file_explorer</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/others/fragment</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/others/gridnav</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/others/ime</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/others/imgfont</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/others/monkey</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/others/msg</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/others/snapshot</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/themes/basic</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/themes/default</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/themes/lv_themes.h</name>
+			<name>src/widgets/lv_arc.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/themes/lv_themes.h</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_arc.c</locationURI>
 		</link>
 		<link>
-			<name>src/themes/mono</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_arc.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_arc.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/animimg</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_bar.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_bar.c</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/arc</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_bar.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_bar.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/bar</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_btn.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_btn.c</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/btn</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_btn.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_btn.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/btnmatrix</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_btnmatrix.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_btnmatrix.c</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/calendar</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_btnmatrix.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_btnmatrix.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/canvas</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_canvas.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_canvas.c</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/chart</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_canvas.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_canvas.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/checkbox</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_checkbox.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_checkbox.c</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/colorwheel</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_checkbox.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_checkbox.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/dropdown</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_dropdown.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_dropdown.c</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/img</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_dropdown.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_dropdown.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/imgbtn</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_img.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_img.c</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/keyboard</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_img.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_img.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/label</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_label.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_label.c</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/led</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_label.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_label.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/line</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_line.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_line.c</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/list</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_line.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_line.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/menu</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_objx_templ.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_objx_templ.c</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/meter</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_objx_templ.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_objx_templ.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/msgbox</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_roller.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_roller.c</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/objx_templ</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_roller.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_roller.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/roller</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_slider.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_slider.c</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/slider</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_slider.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_slider.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/span</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_switch.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_switch.c</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/spinbox</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_switch.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_switch.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/spinner</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_table.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_table.c</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/switch</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_table.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_table.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/table</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_textarea.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_textarea.c</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/tabview</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_textarea.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_textarea.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/textarea</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/widgets/lv_widgets.mk</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/lv_widgets.mk</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/tileview</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/win</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>src/draw/arm2d/lv_draw_arm2d.mk</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/arm2d/lv_draw_arm2d.mk</locationURI>
 		</link>
 		<link>
 			<name>src/draw/arm2d/lv_gpu_arm2d.c</name>
@@ -1160,24 +1090,9 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/arm2d/lv_gpu_arm2d.h</locationURI>
 		</link>
 		<link>
-			<name>src/draw/gd32_ipa/lv_gpu_gd32_ipa.c</name>
+			<name>src/draw/nxp/lv_draw_nxp.mk</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/gd32_ipa/lv_gpu_gd32_ipa.c</locationURI>
-		</link>
-		<link>
-			<name>src/draw/gd32_ipa/lv_gpu_gd32_ipa.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/gd32_ipa/lv_gpu_gd32_ipa.h</locationURI>
-		</link>
-		<link>
-			<name>src/draw/nxp/lv_gpu_nxp.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/lv_gpu_nxp.c</locationURI>
-		</link>
-		<link>
-			<name>src/draw/nxp/lv_gpu_nxp.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/lv_gpu_nxp.h</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/lv_draw_nxp.mk</locationURI>
 		</link>
 		<link>
 			<name>src/draw/nxp/pxp</name>
@@ -1188,6 +1103,26 @@
 			<name>src/draw/nxp/vglite</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>src/draw/renesas/lv_draw_renesas.mk</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/renesas/lv_draw_renesas.mk</locationURI>
+		</link>
+		<link>
+			<name>src/draw/renesas/lv_gpu_d2_draw_label.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/renesas/lv_gpu_d2_draw_label.c</locationURI>
+		</link>
+		<link>
+			<name>src/draw/renesas/lv_gpu_d2_ra6m3.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.c</locationURI>
+		</link>
+		<link>
+			<name>src/draw/renesas/lv_gpu_d2_ra6m3.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h</locationURI>
 		</link>
 		<link>
 			<name>src/draw/sdl/README.md</name>
@@ -1203,6 +1138,11 @@
 			<name>src/draw/sdl/lv_draw_sdl.h</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/sdl/lv_draw_sdl.h</locationURI>
+		</link>
+		<link>
+			<name>src/draw/sdl/lv_draw_sdl.mk</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/sdl/lv_draw_sdl.mk</locationURI>
 		</link>
 		<link>
 			<name>src/draw/sdl/lv_draw_sdl_arc.c</name>
@@ -1315,6 +1255,11 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/sdl/lv_draw_sdl_utils.h</locationURI>
 		</link>
 		<link>
+			<name>src/draw/stm32_dma2d/lv_draw_stm32_dma2d.mk</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/stm32_dma2d/lv_draw_stm32_dma2d.mk</locationURI>
+		</link>
+		<link>
 			<name>src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c</locationURI>
@@ -1333,6 +1278,11 @@
 			<name>src/draw/sw/lv_draw_sw.h</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/sw/lv_draw_sw.h</locationURI>
+		</link>
+		<link>
+			<name>src/draw/sw/lv_draw_sw.mk</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/sw/lv_draw_sw.mk</locationURI>
 		</link>
 		<link>
 			<name>src/draw/sw/lv_draw_sw_arc.c</name>
@@ -1405,6 +1355,11 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/sw/lv_draw_sw_transform.c</locationURI>
 		</link>
 		<link>
+			<name>src/draw/swm341_dma2d/lv_draw_swm341_dma2d.mk</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/swm341_dma2d/lv_draw_swm341_dma2d.mk</locationURI>
+		</link>
+		<link>
 			<name>src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c</locationURI>
@@ -1415,674 +1370,234 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.h</locationURI>
 		</link>
 		<link>
-			<name>src/layouts/flex/lv_flex.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/layouts/flex/lv_flex.c</locationURI>
-		</link>
-		<link>
-			<name>src/layouts/flex/lv_flex.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/layouts/flex/lv_flex.h</locationURI>
-		</link>
-		<link>
-			<name>src/layouts/grid/lv_grid.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/layouts/grid/lv_grid.c</locationURI>
-		</link>
-		<link>
-			<name>src/layouts/grid/lv_grid.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/layouts/grid/lv_grid.h</locationURI>
-		</link>
-		<link>
-			<name>src/libs/bmp/lv_bmp.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/bmp/lv_bmp.c</locationURI>
-		</link>
-		<link>
-			<name>src/libs/bmp/lv_bmp.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/bmp/lv_bmp.h</locationURI>
-		</link>
-		<link>
-			<name>src/libs/ffmpeg/lv_ffmpeg.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/ffmpeg/lv_ffmpeg.c</locationURI>
-		</link>
-		<link>
-			<name>src/libs/ffmpeg/lv_ffmpeg.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/ffmpeg/lv_ffmpeg.h</locationURI>
-		</link>
-		<link>
-			<name>src/libs/freetype/arial.ttf</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/freetype/arial.ttf</locationURI>
-		</link>
-		<link>
-			<name>src/libs/freetype/lv_freetype.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/freetype/lv_freetype.c</locationURI>
-		</link>
-		<link>
-			<name>src/libs/freetype/lv_freetype.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/freetype/lv_freetype.h</locationURI>
-		</link>
-		<link>
-			<name>src/libs/fsdrv/lv_fs_cbfs.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/fsdrv/lv_fs_cbfs.c</locationURI>
-		</link>
-		<link>
-			<name>src/libs/fsdrv/lv_fs_fatfs.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/fsdrv/lv_fs_fatfs.c</locationURI>
-		</link>
-		<link>
-			<name>src/libs/fsdrv/lv_fs_posix.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/fsdrv/lv_fs_posix.c</locationURI>
-		</link>
-		<link>
-			<name>src/libs/fsdrv/lv_fs_stdio.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/fsdrv/lv_fs_stdio.c</locationURI>
-		</link>
-		<link>
-			<name>src/libs/fsdrv/lv_fs_win32.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/fsdrv/lv_fs_win32.c</locationURI>
-		</link>
-		<link>
-			<name>src/libs/fsdrv/lv_fsdrv.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/fsdrv/lv_fsdrv.h</locationURI>
-		</link>
-		<link>
-			<name>src/libs/gif/gifdec.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/gif/gifdec.c</locationURI>
-		</link>
-		<link>
-			<name>src/libs/gif/gifdec.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/gif/gifdec.h</locationURI>
-		</link>
-		<link>
-			<name>src/libs/gif/lv_gif.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/gif/lv_gif.c</locationURI>
-		</link>
-		<link>
-			<name>src/libs/gif/lv_gif.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/gif/lv_gif.h</locationURI>
-		</link>
-		<link>
-			<name>src/libs/png/lodepng.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/png/lodepng.c</locationURI>
-		</link>
-		<link>
-			<name>src/libs/png/lodepng.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/png/lodepng.h</locationURI>
-		</link>
-		<link>
-			<name>src/libs/png/lv_png.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/png/lv_png.c</locationURI>
-		</link>
-		<link>
-			<name>src/libs/png/lv_png.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/png/lv_png.h</locationURI>
-		</link>
-		<link>
-			<name>src/libs/qrcode/lv_qrcode.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/qrcode/lv_qrcode.c</locationURI>
-		</link>
-		<link>
-			<name>src/libs/qrcode/lv_qrcode.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/qrcode/lv_qrcode.h</locationURI>
-		</link>
-		<link>
-			<name>src/libs/qrcode/qrcodegen.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/qrcode/qrcodegen.c</locationURI>
-		</link>
-		<link>
-			<name>src/libs/qrcode/qrcodegen.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/qrcode/qrcodegen.h</locationURI>
-		</link>
-		<link>
-			<name>src/libs/rlottie/lv_rlottie.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/rlottie/lv_rlottie.c</locationURI>
-		</link>
-		<link>
-			<name>src/libs/rlottie/lv_rlottie.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/rlottie/lv_rlottie.h</locationURI>
-		</link>
-		<link>
-			<name>src/libs/sjpg/lv_sjpg.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/sjpg/lv_sjpg.c</locationURI>
-		</link>
-		<link>
-			<name>src/libs/sjpg/lv_sjpg.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/sjpg/lv_sjpg.h</locationURI>
-		</link>
-		<link>
-			<name>src/libs/sjpg/tjpgd.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/sjpg/tjpgd.c</locationURI>
-		</link>
-		<link>
-			<name>src/libs/sjpg/tjpgd.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/sjpg/tjpgd.h</locationURI>
-		</link>
-		<link>
-			<name>src/libs/sjpg/tjpgdcnf.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/sjpg/tjpgdcnf.h</locationURI>
-		</link>
-		<link>
-			<name>src/libs/tiny_ttf/lv_tiny_ttf.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/tiny_ttf/lv_tiny_ttf.c</locationURI>
-		</link>
-		<link>
-			<name>src/libs/tiny_ttf/lv_tiny_ttf.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/tiny_ttf/lv_tiny_ttf.h</locationURI>
-		</link>
-		<link>
-			<name>src/libs/tiny_ttf/stb_rect_pack.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/tiny_ttf/stb_rect_pack.h</locationURI>
-		</link>
-		<link>
-			<name>src/libs/tiny_ttf/stb_truetype_htcw.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/libs/tiny_ttf/stb_truetype_htcw.h</locationURI>
-		</link>
-		<link>
-			<name>src/others/file_explorer/lv_file_explorer.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/others/file_explorer/lv_file_explorer.c</locationURI>
-		</link>
-		<link>
-			<name>src/others/file_explorer/lv_file_explorer.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/others/file_explorer/lv_file_explorer.h</locationURI>
-		</link>
-		<link>
-			<name>src/others/fragment/README.md</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/others/fragment/README.md</locationURI>
-		</link>
-		<link>
-			<name>src/others/fragment/lv_fragment.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/others/fragment/lv_fragment.c</locationURI>
-		</link>
-		<link>
-			<name>src/others/fragment/lv_fragment.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/others/fragment/lv_fragment.h</locationURI>
-		</link>
-		<link>
-			<name>src/others/fragment/lv_fragment_manager.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/others/fragment/lv_fragment_manager.c</locationURI>
-		</link>
-		<link>
-			<name>src/others/gridnav/lv_gridnav.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/others/gridnav/lv_gridnav.c</locationURI>
-		</link>
-		<link>
-			<name>src/others/gridnav/lv_gridnav.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/others/gridnav/lv_gridnav.h</locationURI>
-		</link>
-		<link>
-			<name>src/others/ime/lv_ime_pinyin.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/others/ime/lv_ime_pinyin.c</locationURI>
-		</link>
-		<link>
-			<name>src/others/ime/lv_ime_pinyin.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/others/ime/lv_ime_pinyin.h</locationURI>
-		</link>
-		<link>
-			<name>src/others/imgfont/lv_imgfont.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/others/imgfont/lv_imgfont.c</locationURI>
+			<name>src/extra/layouts/flex</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/others/imgfont/lv_imgfont.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/others/imgfont/lv_imgfont.h</locationURI>
-		</link>
-		<link>
-			<name>src/others/monkey/lv_monkey.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/others/monkey/lv_monkey.c</locationURI>
-		</link>
-		<link>
-			<name>src/others/monkey/lv_monkey.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/others/monkey/lv_monkey.h</locationURI>
-		</link>
-		<link>
-			<name>src/others/msg/lv_msg.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/others/msg/lv_msg.c</locationURI>
-		</link>
-		<link>
-			<name>src/others/msg/lv_msg.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/others/msg/lv_msg.h</locationURI>
-		</link>
-		<link>
-			<name>src/others/snapshot/lv_snapshot.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/others/snapshot/lv_snapshot.c</locationURI>
-		</link>
-		<link>
-			<name>src/others/snapshot/lv_snapshot.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/others/snapshot/lv_snapshot.h</locationURI>
-		</link>
-		<link>
-			<name>src/themes/basic/lv_theme_basic.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/themes/basic/lv_theme_basic.c</locationURI>
-		</link>
-		<link>
-			<name>src/themes/basic/lv_theme_basic.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/themes/basic/lv_theme_basic.h</locationURI>
-		</link>
-		<link>
-			<name>src/themes/default/lv_theme_default.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/themes/default/lv_theme_default.c</locationURI>
-		</link>
-		<link>
-			<name>src/themes/default/lv_theme_default.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/themes/default/lv_theme_default.h</locationURI>
-		</link>
-		<link>
-			<name>src/themes/mono/lv_theme_mono.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/themes/mono/lv_theme_mono.c</locationURI>
-		</link>
-		<link>
-			<name>src/themes/mono/lv_theme_mono.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/themes/mono/lv_theme_mono.h</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/animimg/lv_animimg.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/animimg/lv_animimg.c</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/animimg/lv_animimg.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/animimg/lv_animimg.h</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/arc/lv_arc.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/arc/lv_arc.c</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/arc/lv_arc.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/arc/lv_arc.h</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/bar/lv_bar.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/bar/lv_bar.c</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/bar/lv_bar.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/bar/lv_bar.h</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/btn/lv_btn.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/btn/lv_btn.c</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/btn/lv_btn.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/btn/lv_btn.h</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/btnmatrix/lv_btnmatrix.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/btnmatrix/lv_btnmatrix.c</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/btnmatrix/lv_btnmatrix.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/btnmatrix/lv_btnmatrix.h</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/calendar/lv_calendar.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/calendar/lv_calendar.c</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/calendar/lv_calendar.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/calendar/lv_calendar.h</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/calendar/lv_calendar_header_arrow.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/calendar/lv_calendar_header_arrow.c</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/calendar/lv_calendar_header_arrow.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/calendar/lv_calendar_header_arrow.h</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/calendar/lv_calendar_header_dropdown.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/calendar/lv_calendar_header_dropdown.c</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/calendar/lv_calendar_header_dropdown.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/calendar/lv_calendar_header_dropdown.h</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/canvas/lv_canvas.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/canvas/lv_canvas.c</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/canvas/lv_canvas.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/canvas/lv_canvas.h</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/chart/lv_chart.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/chart/lv_chart.c</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/chart/lv_chart.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/chart/lv_chart.h</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/checkbox/lv_checkbox.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/checkbox/lv_checkbox.c</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/checkbox/lv_checkbox.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/checkbox/lv_checkbox.h</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/colorwheel/lv_colorwheel.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/colorwheel/lv_colorwheel.c</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/colorwheel/lv_colorwheel.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/colorwheel/lv_colorwheel.h</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/dropdown/lv_dropdown.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/dropdown/lv_dropdown.c</locationURI>
-		</link>
-		<link>
-			<name>src/widgets/dropdown/lv_dropdown.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/dropdown/lv_dropdown.h</locationURI>
+			<name>src/extra/layouts/grid</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/img/lv_img.c</name>
+			<name>src/extra/layouts/lv_layouts.h</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/img/lv_img.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/layouts/lv_layouts.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/img/lv_img.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/img/lv_img.h</locationURI>
+			<name>src/extra/libs/bmp</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/imgbtn/lv_imgbtn.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/imgbtn/lv_imgbtn.c</locationURI>
+			<name>src/extra/libs/ffmpeg</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/imgbtn/lv_imgbtn.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/imgbtn/lv_imgbtn.h</locationURI>
+			<name>src/extra/libs/freetype</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/keyboard/lv_keyboard.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/keyboard/lv_keyboard.c</locationURI>
+			<name>src/extra/libs/fsdrv</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/keyboard/lv_keyboard.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/keyboard/lv_keyboard.h</locationURI>
+			<name>src/extra/libs/gif</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/label/lv_label.c</name>
+			<name>src/extra/libs/lv_libs.h</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/label/lv_label.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/lv_libs.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/label/lv_label.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/label/lv_label.h</locationURI>
+			<name>src/extra/libs/png</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/led/lv_led.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/led/lv_led.c</locationURI>
+			<name>src/extra/libs/qrcode</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/led/lv_led.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/led/lv_led.h</locationURI>
+			<name>src/extra/libs/rlottie</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/line/lv_line.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/line/lv_line.c</locationURI>
+			<name>src/extra/libs/sjpg</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/line/lv_line.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/line/lv_line.h</locationURI>
+			<name>src/extra/others/fragment</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/list/lv_list.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/list/lv_list.c</locationURI>
+			<name>src/extra/others/gridnav</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/list/lv_list.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/list/lv_list.h</locationURI>
+			<name>src/extra/others/ime</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/menu/lv_menu.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/menu/lv_menu.c</locationURI>
+			<name>src/extra/others/imgfont</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/menu/lv_menu.h</name>
+			<name>src/extra/others/lv_others.h</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/menu/lv_menu.h</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/others/lv_others.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/meter/lv_meter.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/meter/lv_meter.c</locationURI>
+			<name>src/extra/others/monkey</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/meter/lv_meter.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/meter/lv_meter.h</locationURI>
+			<name>src/extra/others/msg</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/msgbox/lv_msgbox.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/msgbox/lv_msgbox.c</locationURI>
+			<name>src/extra/others/snapshot</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/msgbox/lv_msgbox.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/msgbox/lv_msgbox.h</locationURI>
+			<name>src/extra/themes/basic</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/objx_templ/lv_objx_templ.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/objx_templ/lv_objx_templ.c</locationURI>
+			<name>src/extra/themes/default</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/objx_templ/lv_objx_templ.h</name>
+			<name>src/extra/themes/lv_themes.h</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/objx_templ/lv_objx_templ.h</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/themes/lv_themes.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/roller/lv_roller.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/roller/lv_roller.c</locationURI>
+			<name>src/extra/themes/mono</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/roller/lv_roller.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/roller/lv_roller.h</locationURI>
+			<name>src/extra/widgets/animimg</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/slider/lv_slider.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/slider/lv_slider.c</locationURI>
+			<name>src/extra/widgets/calendar</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/slider/lv_slider.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/slider/lv_slider.h</locationURI>
+			<name>src/extra/widgets/chart</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/span/lv_span.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/span/lv_span.c</locationURI>
+			<name>src/extra/widgets/colorwheel</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/span/lv_span.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/span/lv_span.h</locationURI>
+			<name>src/extra/widgets/imgbtn</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/spinbox/lv_spinbox.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/spinbox/lv_spinbox.c</locationURI>
+			<name>src/extra/widgets/keyboard</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/spinbox/lv_spinbox.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/spinbox/lv_spinbox.h</locationURI>
+			<name>src/extra/widgets/led</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/spinner/lv_spinner.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/spinner/lv_spinner.c</locationURI>
+			<name>src/extra/widgets/list</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/spinner/lv_spinner.h</name>
+			<name>src/extra/widgets/lv_widgets.h</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/spinner/lv_spinner.h</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/lv_widgets.h</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/switch/lv_switch.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/switch/lv_switch.c</locationURI>
+			<name>src/extra/widgets/menu</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/switch/lv_switch.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/switch/lv_switch.h</locationURI>
+			<name>src/extra/widgets/meter</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/table/lv_table.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/table/lv_table.c</locationURI>
+			<name>src/extra/widgets/msgbox</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/table/lv_table.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/table/lv_table.h</locationURI>
+			<name>src/extra/widgets/span</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/tabview/lv_tabview.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/tabview/lv_tabview.c</locationURI>
+			<name>src/extra/widgets/spinbox</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/tabview/lv_tabview.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/tabview/lv_tabview.h</locationURI>
+			<name>src/extra/widgets/spinner</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/textarea/lv_textarea.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/textarea/lv_textarea.c</locationURI>
+			<name>src/extra/widgets/tabview</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/textarea/lv_textarea.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/textarea/lv_textarea.h</locationURI>
+			<name>src/extra/widgets/tileview</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/tileview/lv_tileview.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/tileview/lv_tileview.c</locationURI>
+			<name>src/extra/widgets/win</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/tileview/lv_tileview.h</name>
+			<name>src/draw/nxp/pxp/lv_draw_nxp_pxp.mk</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/tileview/lv_tileview.h</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/pxp/lv_draw_nxp_pxp.mk</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/win/lv_win.c</name>
+			<name>src/draw/nxp/pxp/lv_draw_pxp.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/win/lv_win.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/pxp/lv_draw_pxp.c</locationURI>
 		</link>
 		<link>
-			<name>src/widgets/win/lv_win.h</name>
+			<name>src/draw/nxp/pxp/lv_draw_pxp.h</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/widgets/win/lv_win.h</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/pxp/lv_draw_pxp.h</locationURI>
 		</link>
 		<link>
 			<name>src/draw/nxp/pxp/lv_draw_pxp_blend.c</name>
@@ -2115,6 +1630,21 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.h</locationURI>
 		</link>
 		<link>
+			<name>src/draw/nxp/vglite/lv_draw_nxp_vglite.mk</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/vglite/lv_draw_nxp_vglite.mk</locationURI>
+		</link>
+		<link>
+			<name>src/draw/nxp/vglite/lv_draw_vglite.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/vglite/lv_draw_vglite.c</locationURI>
+		</link>
+		<link>
+			<name>src/draw/nxp/vglite/lv_draw_vglite.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/vglite/lv_draw_vglite.h</locationURI>
+		</link>
+		<link>
 			<name>src/draw/nxp/vglite/lv_draw_vglite_arc.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/vglite/lv_draw_vglite_arc.c</locationURI>
@@ -2135,6 +1665,16 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.h</locationURI>
 		</link>
 		<link>
+			<name>src/draw/nxp/vglite/lv_draw_vglite_line.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/vglite/lv_draw_vglite_line.c</locationURI>
+		</link>
+		<link>
+			<name>src/draw/nxp/vglite/lv_draw_vglite_line.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/vglite/lv_draw_vglite_line.h</locationURI>
+		</link>
+		<link>
 			<name>src/draw/nxp/vglite/lv_draw_vglite_rect.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/vglite/lv_draw_vglite_rect.c</locationURI>
@@ -2145,14 +1685,499 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/vglite/lv_draw_vglite_rect.h</locationURI>
 		</link>
 		<link>
-			<name>src/draw/nxp/vglite/lv_gpu_nxp_vglite.c</name>
+			<name>src/draw/nxp/vglite/lv_vglite_buf.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/vglite/lv_gpu_nxp_vglite.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/vglite/lv_vglite_buf.c</locationURI>
 		</link>
 		<link>
-			<name>src/draw/nxp/vglite/lv_gpu_nxp_vglite.h</name>
+			<name>src/draw/nxp/vglite/lv_vglite_buf.h</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/vglite/lv_gpu_nxp_vglite.h</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/vglite/lv_vglite_buf.h</locationURI>
+		</link>
+		<link>
+			<name>src/draw/nxp/vglite/lv_vglite_utils.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/vglite/lv_vglite_utils.c</locationURI>
+		</link>
+		<link>
+			<name>src/draw/nxp/vglite/lv_vglite_utils.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/draw/nxp/vglite/lv_vglite_utils.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/layouts/flex/lv_flex.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/layouts/flex/lv_flex.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/layouts/flex/lv_flex.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/layouts/flex/lv_flex.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/layouts/grid/lv_grid.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/layouts/grid/lv_grid.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/layouts/grid/lv_grid.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/layouts/grid/lv_grid.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/bmp/lv_bmp.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/bmp/lv_bmp.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/bmp/lv_bmp.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/bmp/lv_bmp.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/ffmpeg/lv_ffmpeg.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/ffmpeg/lv_ffmpeg.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/freetype/arial.ttf</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/freetype/arial.ttf</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/freetype/lv_freetype.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/freetype/lv_freetype.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/freetype/lv_freetype.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/freetype/lv_freetype.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/fsdrv/lv_fs_fatfs.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/fsdrv/lv_fs_fatfs.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/fsdrv/lv_fs_posix.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/fsdrv/lv_fs_posix.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/fsdrv/lv_fs_stdio.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/fsdrv/lv_fs_stdio.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/fsdrv/lv_fs_win32.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/fsdrv/lv_fs_win32.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/fsdrv/lv_fsdrv.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/fsdrv/lv_fsdrv.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/gif/gifdec.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/gif/gifdec.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/gif/gifdec.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/gif/gifdec.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/gif/lv_gif.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/gif/lv_gif.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/gif/lv_gif.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/gif/lv_gif.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/png/lodepng.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/png/lodepng.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/png/lodepng.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/png/lodepng.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/png/lv_png.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/png/lv_png.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/png/lv_png.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/png/lv_png.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/qrcode/lv_qrcode.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/qrcode/lv_qrcode.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/qrcode/lv_qrcode.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/qrcode/lv_qrcode.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/qrcode/qrcodegen.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/qrcode/qrcodegen.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/qrcode/qrcodegen.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/qrcode/qrcodegen.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/rlottie/lv_rlottie.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/rlottie/lv_rlottie.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/rlottie/lv_rlottie.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/rlottie/lv_rlottie.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/sjpg/lv_sjpg.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/sjpg/lv_sjpg.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/sjpg/lv_sjpg.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/sjpg/lv_sjpg.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/sjpg/tjpgd.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/sjpg/tjpgd.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/sjpg/tjpgd.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/sjpg/tjpgd.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/libs/sjpg/tjpgdcnf.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/libs/sjpg/tjpgdcnf.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/others/fragment/README.md</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/others/fragment/README.md</locationURI>
+		</link>
+		<link>
+			<name>src/extra/others/fragment/lv_fragment.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/others/fragment/lv_fragment.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/others/fragment/lv_fragment.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/others/fragment/lv_fragment.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/others/fragment/lv_fragment_manager.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/others/fragment/lv_fragment_manager.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/others/gridnav/lv_gridnav.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/others/gridnav/lv_gridnav.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/others/gridnav/lv_gridnav.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/others/gridnav/lv_gridnav.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/others/ime/lv_ime_pinyin.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/others/ime/lv_ime_pinyin.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/others/ime/lv_ime_pinyin.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/others/ime/lv_ime_pinyin.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/others/imgfont/lv_imgfont.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/others/imgfont/lv_imgfont.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/others/imgfont/lv_imgfont.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/others/imgfont/lv_imgfont.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/others/monkey/lv_monkey.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/others/monkey/lv_monkey.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/others/monkey/lv_monkey.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/others/monkey/lv_monkey.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/others/msg/lv_msg.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/others/msg/lv_msg.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/others/msg/lv_msg.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/others/msg/lv_msg.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/others/snapshot/lv_snapshot.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/others/snapshot/lv_snapshot.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/others/snapshot/lv_snapshot.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/others/snapshot/lv_snapshot.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/themes/basic/lv_theme_basic.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/themes/basic/lv_theme_basic.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/themes/basic/lv_theme_basic.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/themes/basic/lv_theme_basic.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/themes/default/lv_theme_default.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/themes/default/lv_theme_default.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/themes/default/lv_theme_default.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/themes/default/lv_theme_default.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/themes/mono/lv_theme_mono.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/themes/mono/lv_theme_mono.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/themes/mono/lv_theme_mono.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/themes/mono/lv_theme_mono.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/animimg/lv_animimg.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/animimg/lv_animimg.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/animimg/lv_animimg.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/animimg/lv_animimg.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/calendar/lv_calendar.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/calendar/lv_calendar.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/calendar/lv_calendar.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/calendar/lv_calendar.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/calendar/lv_calendar_header_arrow.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/calendar/lv_calendar_header_arrow.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/calendar/lv_calendar_header_dropdown.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/calendar/lv_calendar_header_dropdown.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/chart/lv_chart.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/chart/lv_chart.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/chart/lv_chart.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/chart/lv_chart.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/colorwheel/lv_colorwheel.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/colorwheel/lv_colorwheel.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/imgbtn/lv_imgbtn.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/imgbtn/lv_imgbtn.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/keyboard/lv_keyboard.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/keyboard/lv_keyboard.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/keyboard/lv_keyboard.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/keyboard/lv_keyboard.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/led/lv_led.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/led/lv_led.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/led/lv_led.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/led/lv_led.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/list/lv_list.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/list/lv_list.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/list/lv_list.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/list/lv_list.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/menu/lv_menu.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/menu/lv_menu.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/menu/lv_menu.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/menu/lv_menu.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/meter/lv_meter.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/meter/lv_meter.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/meter/lv_meter.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/meter/lv_meter.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/msgbox/lv_msgbox.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/msgbox/lv_msgbox.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/msgbox/lv_msgbox.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/msgbox/lv_msgbox.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/span/lv_span.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/span/lv_span.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/span/lv_span.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/span/lv_span.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/spinbox/lv_spinbox.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/spinbox/lv_spinbox.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/spinbox/lv_spinbox.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/spinbox/lv_spinbox.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/spinner/lv_spinner.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/spinner/lv_spinner.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/spinner/lv_spinner.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/spinner/lv_spinner.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/tabview/lv_tabview.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/tabview/lv_tabview.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/tabview/lv_tabview.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/tabview/lv_tabview.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/tileview/lv_tileview.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/tileview/lv_tileview.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/tileview/lv_tileview.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/tileview/lv_tileview.h</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/win/lv_win.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/win/lv_win.c</locationURI>
+		</link>
+		<link>
+			<name>src/extra/widgets/win/lv_win.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Zed_GitSubs/lvgl/src/extra/widgets/win/lv_win.h</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
