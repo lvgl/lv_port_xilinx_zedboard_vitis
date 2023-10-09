@@ -1,21 +1,21 @@
-// (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// (c) Copyright 2022-2023 Advanced Micro Devices, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
-// of Xilinx, Inc. and is protected under U.S. and
-// international copyright and other intellectual property
-// laws.
+// of AMD and is protected under U.S. and international copyright
+// and other intellectual property laws.
 // 
 // DISCLAIMER
 // This disclaimer is not a license and does not grant any
 // rights to the materials distributed herewith. Except as
 // otherwise provided in a valid license issued to you by
-// Xilinx, and to the maximum extent permitted by applicable
+// AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
 // WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
-// (2) Xilinx shall not be liable (whether in contract or tort,
+// (2) AMD shall not be liable (whether in contract or tort,
 // including negligence, or under any other theory of
 // liability) for any loss or damage of any kind or nature
 // related to, arising under or in connection with these
@@ -24,11 +24,11 @@
 // (including loss of data, profits, goodwill, or any type of
 // loss or damage suffered as a result of any action brought
 // by a third party) even if such damage or loss was
-// reasonably foreseeable or Xilinx had been advised of the
+// reasonably foreseeable or AMD had been advised of the
 // possibility of the same.
 // 
 // CRITICAL APPLICATIONS
-// Xilinx products are not designed or intended to be fail-
+// AMD products are not designed or intended to be fail-
 // safe, or for use in any application requiring fail-safe
 // performance, such as life-support or safety devices or
 // systems, Class III medical devices, nuclear facilities,
@@ -37,7 +37,7 @@
 // injury, or severe property or environmental damage
 // (individually and collectively, "Critical
 // Applications"). Customer assumes the sole risk and
-// liability of any use of Xilinx products in Critical
+// liability of any use of AMD products in Critical
 // Applications, subject only to applicable laws and
 // regulations governing limitations on product liability.
 // 
@@ -50,9 +50,9 @@
 // IP VLNV: xilinx.com:ip:xlconcat:2.1
 // IP Revision: 4
 
-(* X_CORE_INFO = "xlconcat_v2_1_4_xlconcat,Vivado 2022.1" *)
+(* X_CORE_INFO = "xlconcat_v2_1_4_xlconcat,Vivado 2023.1" *)
 (* CHECK_LICENSE_TYPE = "design_1_xlconcat_0_0,xlconcat_v2_1_4_xlconcat,{}" *)
-(* CORE_GENERATION_INFO = "design_1_xlconcat_0_0,xlconcat_v2_1_4_xlconcat,{x_ipProduct=Vivado 2022.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlconcat,x_ipVersion=2.1,x_ipCoreRevision=4,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,IN0_WIDTH=1,IN1_WIDTH=1,IN2_WIDTH=1,IN3_WIDTH=1,IN4_WIDTH=1,IN5_WIDTH=1,IN6_WIDTH=1,IN7_WIDTH=1,IN8_WIDTH=1,IN9_WIDTH=1,IN10_WIDTH=1,IN11_WIDTH=1,IN12_WIDTH=1,IN13_WIDTH=1,IN14_WIDTH=1,IN15_WIDTH=1,IN16_WIDTH=1,IN17_WIDTH=1,IN18_WIDTH=1,IN19_WIDTH=1,IN20_WIDTH=1,IN21_WIDTH=1,IN22_WIDTH=1,IN23\
+(* CORE_GENERATION_INFO = "design_1_xlconcat_0_0,xlconcat_v2_1_4_xlconcat,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlconcat,x_ipVersion=2.1,x_ipCoreRevision=4,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,IN0_WIDTH=1,IN1_WIDTH=1,IN2_WIDTH=1,IN3_WIDTH=1,IN4_WIDTH=1,IN5_WIDTH=1,IN6_WIDTH=1,IN7_WIDTH=1,IN8_WIDTH=1,IN9_WIDTH=1,IN10_WIDTH=1,IN11_WIDTH=1,IN12_WIDTH=1,IN13_WIDTH=1,IN14_WIDTH=1,IN15_WIDTH=1,IN16_WIDTH=1,IN17_WIDTH=1,IN18_WIDTH=1,IN19_WIDTH=1,IN20_WIDTH=1,IN21_WIDTH=1,IN22_WIDTH=1,IN23\
 _WIDTH=1,IN24_WIDTH=1,IN25_WIDTH=1,IN26_WIDTH=1,IN27_WIDTH=1,IN28_WIDTH=1,IN29_WIDTH=1,IN30_WIDTH=1,IN31_WIDTH=1,IN32_WIDTH=1,IN33_WIDTH=1,IN34_WIDTH=1,IN35_WIDTH=1,IN36_WIDTH=1,IN37_WIDTH=1,IN38_WIDTH=1,IN39_WIDTH=1,IN40_WIDTH=1,IN41_WIDTH=1,IN42_WIDTH=1,IN43_WIDTH=1,IN44_WIDTH=1,IN45_WIDTH=1,IN46_WIDTH=1,IN47_WIDTH=1,IN48_WIDTH=1,IN49_WIDTH=1,IN50_WIDTH=1,IN51_WIDTH=1,IN52_WIDTH=1,IN53_WIDTH=1,IN54_WIDTH=1,IN55_WIDTH=1,IN56_WIDTH=1,IN57_WIDTH=1,IN58_WIDTH=1,IN59_WIDTH=1,IN60_WIDTH=1,IN61_WIDTH\
 =1,IN62_WIDTH=1,IN63_WIDTH=1,IN64_WIDTH=1,IN65_WIDTH=1,IN66_WIDTH=1,IN67_WIDTH=1,IN68_WIDTH=1,IN69_WIDTH=1,IN70_WIDTH=1,IN71_WIDTH=1,IN72_WIDTH=1,IN73_WIDTH=1,IN74_WIDTH=1,IN75_WIDTH=1,IN76_WIDTH=1,IN77_WIDTH=1,IN78_WIDTH=1,IN79_WIDTH=1,IN80_WIDTH=1,IN81_WIDTH=1,IN82_WIDTH=1,IN83_WIDTH=1,IN84_WIDTH=1,IN85_WIDTH=1,IN86_WIDTH=1,IN87_WIDTH=1,IN88_WIDTH=1,IN89_WIDTH=1,IN90_WIDTH=1,IN91_WIDTH=1,IN92_WIDTH=1,IN93_WIDTH=1,IN94_WIDTH=1,IN95_WIDTH=1,IN96_WIDTH=1,IN97_WIDTH=1,IN98_WIDTH=1,IN99_WIDTH=1,IN1\
 00_WIDTH=1,IN101_WIDTH=1,IN102_WIDTH=1,IN103_WIDTH=1,IN104_WIDTH=1,IN105_WIDTH=1,IN106_WIDTH=1,IN107_WIDTH=1,IN108_WIDTH=1,IN109_WIDTH=1,IN110_WIDTH=1,IN111_WIDTH=1,IN112_WIDTH=1,IN113_WIDTH=1,IN114_WIDTH=1,IN115_WIDTH=1,IN116_WIDTH=1,IN117_WIDTH=1,IN118_WIDTH=1,IN119_WIDTH=1,IN120_WIDTH=1,IN121_WIDTH=1,IN122_WIDTH=1,IN123_WIDTH=1,IN124_WIDTH=1,IN125_WIDTH=1,IN126_WIDTH=1,IN127_WIDTH=1,dout_width=16,NUM_PORTS=16}" *)

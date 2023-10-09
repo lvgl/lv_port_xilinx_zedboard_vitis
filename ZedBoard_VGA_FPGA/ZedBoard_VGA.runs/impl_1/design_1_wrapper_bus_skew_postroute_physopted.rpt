@@ -1,12 +1,13 @@
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date         : Mon Nov  7 12:05:06 2022
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Mon Oct  9 10:45:54 2023
 | Host         : PETE-LT running 64-bit major release  (build 9200)
 | Command      : report_bus_skew -warn_on_violation -file design_1_wrapper_bus_skew_postroute_physopted.rpt -pb design_1_wrapper_bus_skew_postroute_physopted.pb -rpx design_1_wrapper_bus_skew_postroute_physopted.rpx
 | Design       : design_1_wrapper
 | Device       : 7z020-clg484
 | Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Physopt postRoute
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Bus Skew Report
@@ -45,7 +46,7 @@ Id  Position  From                            To                              Co
           {design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} \
           {design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} \
           {design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
-                                                                              Slow              5.000       0.958      4.042
+                                                                              Slow              5.000       1.456      3.544
 2   16        [get_cells [list {design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[0]} \
           {design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[10]} \
           {design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[11]} \
@@ -70,7 +71,7 @@ Id  Position  From                            To                              Co
           {design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} \
           {design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} \
           {design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
-                                                                              Slow              5.000       1.281      3.719
+                                                                              Slow              5.000       1.000      4.000
 
 
 2. Bus Skew Report Per Constraint
@@ -106,15 +107,15 @@ Endpoints: 12
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/px_nco_phase[0]
-                      clk_fpga_1            design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][11]/D
+                      clk_fpga_1            design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
                                                                             design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
-                                                                                                            Slow         0.958      4.042
+                                                                                                            Slow         1.456      3.544
 
 
-Slack (MET) :             4.042ns  (requirement - actual skew)
-  Endpoint Source:        design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[11]/C
+Slack (MET) :             3.544ns  (requirement - actual skew)
+  Endpoint Source:        design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
                             (rising edge-triggered cell FDRE clocked by design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/px_nco_phase[0])
-  Endpoint Destination:   design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][11]/D
+  Endpoint Destination:   design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
                             (rising edge-triggered cell FDRE clocked by clk_fpga_1)
   Reference Source:       design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]/C
                             (rising edge-triggered cell FDRE clocked by design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/px_nco_phase[0])
@@ -122,10 +123,10 @@ Slack (MET) :             4.042ns  (requirement - actual skew)
                             (rising edge-triggered cell FDRE clocked by clk_fpga_1)
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            5.000ns
-  Endpoint Relative Delay:    5.071ns
-  Reference Relative Delay:   3.389ns
-  Relative CRPR:              0.724ns
-  Actual Bus Skew:            0.958ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+  Endpoint Relative Delay:    5.413ns
+  Reference Relative Delay:   3.253ns
+  Relative CRPR:              0.705ns
+  Actual Bus Skew:            1.456ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -135,16 +136,16 @@ Endpoint path:
     PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
                          net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
     BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
-                         net (fo=568, routed)         1.648     2.942    design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/m_axi_aclk
-    SLICE_X40Y61         FDRE (Prop_fdre_C_Q)         0.456     3.398 r  design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/phase_out_reg[35]/Q
-                         net (fo=1, routed)           1.181     4.579    design_1_i/Zedboard_AXI_VGA_0/inst/px_nco_phase[35]
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     4.680 r  design_1_i/Zedboard_AXI_VGA_0/inst/px_clk_bufg/O
-                         net (fo=108, routed)         1.665     6.345    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
-    SLICE_X32Y42         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[11]/C
+                         net (fo=568, routed)         1.653     2.947    design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/m_axi_aclk
+    SLICE_X38Y52         FDRE (Prop_fdre_C_Q)         0.518     3.465 r  design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/phase_out_reg[35]/Q
+                         net (fo=1, routed)           0.968     4.433    design_1_i/Zedboard_AXI_VGA_0/inst/px_nco_phase[35]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     4.534 r  design_1_i/Zedboard_AXI_VGA_0/inst/px_clk_bufg/O
+                         net (fo=108, routed)         1.749     6.283    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X10Y36         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X32Y42         FDRE (Prop_fdre_C_Q)         0.518     6.863 r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[11]/Q
-                         net (fo=1, routed)           0.902     7.764    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[11]
-    SLICE_X33Y42         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][11]/D
+    SLICE_X10Y36         FDRE (Prop_fdre_C_Q)         0.478     6.761 r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[3]/Q
+                         net (fo=1, routed)           1.257     8.019    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[3]
+    SLICE_X15Y36         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_fpga_1 rise edge)
@@ -152,15 +153,15 @@ Endpoint path:
     PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
                          net (fo=1, routed)           1.088     1.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
     BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     1.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
-                         net (fo=568, routed)         1.494     2.673    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
-    SLICE_X33Y42         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][11]/C
-                         clock pessimism              0.115     2.788    
-    SLICE_X33Y42         FDRE (Setup_fdre_C_D)       -0.095     2.693    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][11]
+                         net (fo=568, routed)         1.575     2.754    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X15Y36         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]/C
+                         clock pessimism              0.115     2.869    
+    SLICE_X15Y36         FDRE (Setup_fdre_C_D)       -0.264     2.605    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]
   -------------------------------------------------------------------
-                         data arrival                           7.764    
-                         clock arrival                          2.693    
+                         data arrival                           8.019    
+                         clock arrival                          2.605    
   -------------------------------------------------------------------
-                         relative delay                         5.071    
+                         relative delay                         5.413    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -170,16 +171,16 @@ Reference path:
     PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
                          net (fo=1, routed)           1.088     1.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
     BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     1.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
-                         net (fo=568, routed)         1.476     2.655    design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/m_axi_aclk
-    SLICE_X40Y61         FDRE (Prop_fdre_C_Q)         0.367     3.022 r  design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/phase_out_reg[35]/Q
-                         net (fo=1, routed)           1.017     4.038    design_1_i/Zedboard_AXI_VGA_0/inst/px_nco_phase[35]
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.129 r  design_1_i/Zedboard_AXI_VGA_0/inst/px_clk_bufg/O
-                         net (fo=108, routed)         1.491     5.621    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
-    SLICE_X32Y42         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]/C
+                         net (fo=568, routed)         1.480     2.659    design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/m_axi_aclk
+    SLICE_X38Y52         FDRE (Prop_fdre_C_Q)         0.418     3.077 r  design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/phase_out_reg[35]/Q
+                         net (fo=1, routed)           0.837     3.914    design_1_i/Zedboard_AXI_VGA_0/inst/px_nco_phase[35]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.005 r  design_1_i/Zedboard_AXI_VGA_0/inst/px_clk_bufg/O
+                         net (fo=108, routed)         1.573     5.578    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_clk
+    SLICE_X10Y36         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X32Y42         FDRE (Prop_fdre_C_Q)         0.418     6.039 r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]/Q
-                         net (fo=1, routed)           0.366     6.405    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[6]
-    SLICE_X35Y42         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+    SLICE_X10Y36         FDRE (Prop_fdre_C_Q)         0.418     5.996 r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/src_gray_ff_reg[6]/Q
+                         net (fo=1, routed)           0.420     6.417    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/async_path[6]
+    SLICE_X16Y37         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_fpga_1 rise edge)
@@ -187,15 +188,15 @@ Reference path:
     PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
                          net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
     BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
-                         net (fo=568, routed)         1.668     2.962    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
-    SLICE_X35Y42         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/C
-                         clock pessimism             -0.115     2.847    
-    SLICE_X35Y42         FDRE (Hold_fdre_C_D)         0.169     3.016    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]
+                         net (fo=568, routed)         1.752     3.046    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_clk
+    SLICE_X16Y37         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/C
+                         clock pessimism             -0.115     2.931    
+    SLICE_X16Y37         FDRE (Hold_fdre_C_D)         0.233     3.164    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]
   -------------------------------------------------------------------
-                         data arrival                           6.405    
-                         clock arrival                          3.016    
+                         data arrival                           6.417    
+                         clock arrival                          3.164    
   -------------------------------------------------------------------
-                         relative delay                         3.389    
+                         relative delay                         3.253    
 
 
 
@@ -229,26 +230,26 @@ Endpoints: 12
 From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
 --------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
 clk_fpga_1            design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/px_nco_phase[0]
-                                            design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
-                                                                            design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
-                                                                                                            Slow         1.281      3.719
+                                            design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]/D
+                                                                            design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+                                                                                                            Slow         1.000      4.000
 
 
-Slack (MET) :             3.719ns  (requirement - actual skew)
-  Endpoint Source:        design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]/C
+Slack (MET) :             4.000ns  (requirement - actual skew)
+  Endpoint Source:        design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[9]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_1)
-  Endpoint Destination:   design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+  Endpoint Destination:   design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]/D
                             (rising edge-triggered cell FDRE clocked by design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/px_nco_phase[0])
-  Reference Source:       design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
+  Reference Source:       design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_1)
-  Reference Destination:  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+  Reference Destination:  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
                             (rising edge-triggered cell FDRE clocked by design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/px_nco_phase[0])
   Path Type:              Bus Skew (Max at Slow Process Corner)
   Requirement:            5.000ns
-  Endpoint Relative Delay:   -0.916ns
-  Reference Relative Delay:  -2.934ns
-  Relative CRPR:              0.737ns
-  Actual Bus Skew:            1.281ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+  Endpoint Relative Delay:   -0.852ns
+  Reference Relative Delay:  -2.570ns
+  Relative CRPR:              0.718ns
+  Actual Bus Skew:            1.000ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
 
 Endpoint path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -258,12 +259,12 @@ Endpoint path:
     PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
                          net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
     BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
-                         net (fo=568, routed)         1.745     3.039    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
-    SLICE_X30Y40         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]/C
+                         net (fo=568, routed)         1.746     3.040    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
+    SLICE_X13Y31         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[9]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X30Y40         FDRE (Prop_fdre_C_Q)         0.518     3.557 r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]/Q
-                         net (fo=1, routed)           1.235     4.792    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[4]
-    SLICE_X31Y40         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
+    SLICE_X13Y31         FDRE (Prop_fdre_C_Q)         0.419     3.459 r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[9]/Q
+                         net (fo=1, routed)           1.108     4.567    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[9]
+    SLICE_X13Y30         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/px_nco_phase[0] rise edge)
@@ -271,19 +272,19 @@ Endpoint path:
     PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
                          net (fo=1, routed)           1.088     1.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
     BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     1.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
-                         net (fo=568, routed)         1.476     2.655    design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/m_axi_aclk
-    SLICE_X40Y61         FDRE (Prop_fdre_C_Q)         0.367     3.022 r  design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/phase_out_reg[35]/Q
-                         net (fo=1, routed)           1.017     4.038    design_1_i/Zedboard_AXI_VGA_0/inst/px_nco_phase[35]
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.129 r  design_1_i/Zedboard_AXI_VGA_0/inst/px_clk_bufg/O
-                         net (fo=108, routed)         1.566     5.696    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
-    SLICE_X31Y40         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/C
-                         clock pessimism              0.115     5.811    
-    SLICE_X31Y40         FDRE (Setup_fdre_C_D)       -0.103     5.708    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]
+                         net (fo=568, routed)         1.480     2.659    design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/m_axi_aclk
+    SLICE_X38Y52         FDRE (Prop_fdre_C_Q)         0.418     3.077 r  design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/phase_out_reg[35]/Q
+                         net (fo=1, routed)           0.837     3.914    design_1_i/Zedboard_AXI_VGA_0/inst/px_nco_phase[35]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.005 r  design_1_i/Zedboard_AXI_VGA_0/inst/px_clk_bufg/O
+                         net (fo=108, routed)         1.566     5.571    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X13Y30         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]/C
+                         clock pessimism              0.115     5.686    
+    SLICE_X13Y30         FDRE (Setup_fdre_C_D)       -0.267     5.419    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]
   -------------------------------------------------------------------
-                         data arrival                           4.792    
-                         clock arrival                          5.708    
+                         data arrival                           4.567    
+                         clock arrival                          5.419    
   -------------------------------------------------------------------
-                         relative delay                        -0.916    
+                         relative delay                        -0.852    
 
 Reference path:
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -294,11 +295,11 @@ Reference path:
                          net (fo=1, routed)           1.088     1.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
     BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     1.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
                          net (fo=568, routed)         1.569     2.748    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_clk
-    SLICE_X31Y39         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]/C
+    SLICE_X13Y29         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y39         FDRE (Prop_fdre_C_Q)         0.337     3.085 r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[1]/Q
-                         net (fo=1, routed)           0.378     3.463    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[1]
-    SLICE_X30Y41         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/D
+    SLICE_X13Y29         FDRE (Prop_fdre_C_Q)         0.367     3.115 r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/src_gray_ff_reg[4]/Q
+                         net (fo=1, routed)           0.708     3.823    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/async_path[4]
+    SLICE_X14Y29         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/px_nco_phase[0] rise edge)
@@ -306,19 +307,19 @@ Reference path:
     PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[1]
                          net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[1]
     BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
-                         net (fo=568, routed)         1.648     2.942    design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/m_axi_aclk
-    SLICE_X40Y61         FDRE (Prop_fdre_C_Q)         0.456     3.398 r  design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/phase_out_reg[35]/Q
-                         net (fo=1, routed)           1.181     4.579    design_1_i/Zedboard_AXI_VGA_0/inst/px_nco_phase[35]
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     4.680 r  design_1_i/Zedboard_AXI_VGA_0/inst/px_clk_bufg/O
-                         net (fo=108, routed)         1.743     6.423    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
-    SLICE_X30Y41         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]/C
-                         clock pessimism             -0.115     6.308    
-    SLICE_X30Y41         FDRE (Hold_fdre_C_D)         0.089     6.397    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]
+                         net (fo=568, routed)         1.653     2.947    design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/m_axi_aclk
+    SLICE_X38Y52         FDRE (Prop_fdre_C_Q)         0.518     3.465 r  design_1_i/Zedboard_AXI_VGA_0/inst/px_nco/phase_out_reg[35]/Q
+                         net (fo=1, routed)           0.968     4.433    design_1_i/Zedboard_AXI_VGA_0/inst/px_nco_phase[35]
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     4.534 r  design_1_i/Zedboard_AXI_VGA_0/inst/px_clk_bufg/O
+                         net (fo=108, routed)         1.741     6.275    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_clk
+    SLICE_X14Y29         FDRE                                         r  design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]/C
+                         clock pessimism             -0.115     6.160    
+    SLICE_X14Y29         FDRE (Hold_fdre_C_D)         0.233     6.393    design_1_i/Zedboard_AXI_VGA_0/inst/fifo_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]
   -------------------------------------------------------------------
-                         data arrival                           3.463    
-                         clock arrival                          6.397    
+                         data arrival                           3.823    
+                         clock arrival                          6.393    
   -------------------------------------------------------------------
-                         relative delay                        -2.934    
+                         relative delay                        -2.570    
 
 
 

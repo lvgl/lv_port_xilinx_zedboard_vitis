@@ -157,11 +157,15 @@ void axi_dwidth_converter::rd_handler() {
 }
 
 void axi_dwidth_converter::rd_downsizing() {
-	auto beat_l = m_rd_trans->get_burst_length();
+	//auto beat_l = m_rd_trans->get_burst_length();
 	auto data = m_rd_trans->get_data_ptr();
-	auto new_beat_l = beat_l * (ratio);
+	//auto new_beat_l = beat_l * (ratio);
 	auto strb = m_rd_trans->get_byte_enable_ptr();
 	auto s_addr = m_rd_trans->get_address();
+  unsigned int length = m_rd_trans->get_data_length();
+  auto size = m_rd_trans->get_burst_size();
+  auto beat_l = length/size;
+  auto new_beat_l = beat_l * (ratio);
 	auto num_byte_counter = 0;
 	auto total_num_bytes = beat_l * m_rd_trans->get_burst_size();
 	auto cur_beat_l = 0;
@@ -206,10 +210,14 @@ void axi_dwidth_converter::rd_downsizing() {
 }
 
 void axi_dwidth_converter::wr_downsizing() {
-	auto beat_l = m_wr_trans->get_burst_length();
+	//auto beat_l = m_wr_trans->get_burst_length();
 	auto data = m_wr_trans->get_data_ptr();
 	auto strb = m_wr_trans->get_byte_enable_ptr();
-	auto new_beat_l = beat_l * (ratio);
+	//auto new_beat_l = beat_l * (ratio);
+   unsigned int length = m_wr_trans->get_data_length();
+  auto size = m_wr_trans->get_burst_size();
+  auto beat_l = length/size;
+  auto new_beat_l = beat_l * (ratio);
 	auto s_addr = m_wr_trans->get_address();
 	auto num_byte_counter = 0;
 	auto total_num_bytes = beat_l * m_wr_trans->get_burst_size();
@@ -289,6 +297,7 @@ void axi_dwidth_converter::m_downsize_interface_response_sender() {
 			&& (m_response_mapper_downsize.size() != 0)
 			&& (wr_target_util->is_master_ready())) {
 		xtlm::aximm_payload* response_payld = wr_initiator_util->get_resp();
+				response_payld->acquire();
         m_log_msg = "Sampled Response for Write : " + std::to_string(response_payld->get_address());
         XSC_REPORT_INFO_VERB(m_logger, "DWIDTH::003",m_log_msg.c_str(), DEBUG); 
 
@@ -323,6 +332,7 @@ void axi_dwidth_converter::m_downsize_interface_response_sender() {
 			&& (m_response_mapper_downsize.size() != 0)
 			&& (rd_target_util->is_master_ready())) {
 		xtlm::aximm_payload* response_payld = rd_initiator_util->get_data();
+				response_payld->acquire();
         m_log_msg = "Sampled Response for Read : " + std::to_string(response_payld->get_address());
         XSC_REPORT_INFO_VERB(m_logger, "DWIDTH::003",m_log_msg.c_str(), DEBUG); 
 
@@ -419,7 +429,22 @@ void axi_dwidth_converter::rd_upsizing() {
 	t_trans->acquire();
 	t_trans->deep_copy_from(*m_rd_trans);
 	t_trans->set_address(si_addr);
-    auto data_new = t_trans->create_and_get_data_ptr(mi_len * MI_DATA_WIDTH);
+  auto data_new = t_trans->create_and_get_data_ptr(mi_len * MI_DATA_WIDTH);
+  memcpy(data_new,data,m_rd_trans->get_data_length());
+  memset(data_new+m_rd_trans->get_data_length(),0,((mi_len * MI_DATA_WIDTH)-m_rd_trans->get_data_length()));
+  if (strb != nullptr) {
+  auto str_new = t_trans->create_and_get_byte_enable_ptr(mi_len * MI_DATA_WIDTH);
+  if(strb) 
+  {
+      memcpy(str_new,strb, m_rd_trans->get_byte_enable_length());
+      memset(str_new+m_rd_trans->get_byte_enable_length(),0,((mi_len * MI_DATA_WIDTH)-m_rd_trans->get_byte_enable_length()));
+  }
+  else 
+  {
+         memset(str_new, 0xFF, m_rd_trans->get_data_length());
+         memset(str_new, 0x00, mi_len * MI_DATA_WIDTH - m_rd_trans->get_data_length());
+  }
+  }
 	t_trans->set_burst_size(MI_DATA_WIDTH);
 	t_trans->set_burst_length(mi_len);
 	m_upsize_rd_payld_queue.push(t_trans);
@@ -475,6 +500,7 @@ void axi_dwidth_converter::m_upsize_interface_response_sender() {
 			&& (m_response_mapper_upsize.size() != 0)
 			&& (wr_target_util->is_master_ready())) {
 		xtlm::aximm_payload* response_payld = wr_initiator_util->get_resp();
+				response_payld->acquire();
         m_log_msg = "Sampled Response for Write : " + std::to_string(response_payld->get_address());
         XSC_REPORT_INFO_VERB(m_logger, "DWIDTH::006",m_log_msg.c_str(), DEBUG); 
 
@@ -500,6 +526,7 @@ void axi_dwidth_converter::m_upsize_interface_response_sender() {
 			&& (m_response_mapper_upsize.size() != 0)
 			&& (rd_target_util->is_master_ready())) {
 		xtlm::aximm_payload* response_payld = rd_initiator_util->get_data();
+				response_payld->acquire();
         m_log_msg = "Sampled Response for Read : " + std::to_string(response_payld->get_address());
         XSC_REPORT_INFO_VERB(m_logger, "DWIDTH::006",m_log_msg.c_str(), DEBUG); 
 
@@ -537,3 +564,4 @@ axi_dwidth_converter::~axi_dwidth_converter() {
 	delete wr_initiator_util;
 	delete rd_initiator_util;
 }
+
