@@ -64,7 +64,7 @@ void vApplicationIPNetworkEventHook_Multi( eIPCallbackEvent_t eNetworkEvent, str
 			printf( "DNS server IP Address: %s\r\n", cBuffer );
 			cpu0_globals->net_started = pdTRUE;
 			msg.id = SPAWN_FTP;
-//			q_spawn_req( &msg );
+			q_spawn_req( &msg );
 
         }
     }
