@@ -65,6 +65,8 @@ void ftp_server( void *p ) {
 	/* Set a time out so accept() will just wait for a connection. */
 	memset(&BindAddress, 0, sizeof(BindAddress));
 	BindAddress.sin_port = FreeRTOS_htons(FTP_PORT);
+	BindAddress.sin_family = FREERTOS_AF_INET;
+
 	FreeRTOS_bind( ListeningSocket, (struct freertos_sockaddr *)&BindAddress, sizeof(BindAddress) );
 	FreeRTOS_listen(ListeningSocket, FTP_MAX_CONNECTIONS);
 
@@ -484,7 +486,7 @@ static uint8_t execute_cmd( struct ftp_cmds *cmd_ptr, char *arg_ptr, struct ftp_
 				rd_loop++;
 			}
 			*wr_ptr = 0;									// info arrives in format 10,1,1,2,23,33
-			wr_ptr = (char *)&peer_address.sin_addr;		// The 10,1,1,2 denotes the IP address
+			wr_ptr = (char *)&peer_address.sin_address.ulIP_IPv4;		// The 10,1,1,2 denotes the IP address
 			rd_ptr = arg_2;									// The 23,33 Denotes the 2 bytes of the TCP PORT network byte order
 			for( rd_loop = 0; rd_loop < 6; rd_loop++ ) {
 				memset( crunch_buf, 0, sizeof( crunch_buf ) );
@@ -511,8 +513,9 @@ static uint8_t execute_cmd( struct ftp_cmds *cmd_ptr, char *arg_ptr, struct ftp_
 				if( send_ctl_response( FTP_DCO_FAIL, "Socket Failure", session ) == CTRL_NOK ) return CTRL_NOK;
 				break;
 			}
-			local_address.sin_addr = FreeRTOS_GetIPAddress( );
+			local_address.sin_address.ulIP_IPv4 = FreeRTOS_GetIPAddress( );
 			local_address.sin_port = FreeRTOS_htons( FTP_TRANS_PORT );		/* Bind to FTP transfer port number */
+			local_address.sin_family = FREERTOS_AF_INET;
 
 			FreeRTOS_bind( session->data_sock, &local_address, sizeof( local_address ) );
 
@@ -525,6 +528,7 @@ static uint8_t execute_cmd( struct ftp_cmds *cmd_ptr, char *arg_ptr, struct ftp_
 
 			FreeRTOS_setsockopt( session->data_sock, 0, FREERTOS_SO_RCVTIMEO, &TRTimeOut, sizeof( TRTimeOut ) );
 			FreeRTOS_setsockopt( session->data_sock, 0, FREERTOS_SO_SNDTIMEO, &TRTimeOut, sizeof( TRTimeOut ) );
+			peer_address.sin_family = FREERTOS_AF_INET;
 			if( FreeRTOS_connect( session->data_sock, &peer_address, sizeof(peer_address) ) < 0 ) {
 				if( send_ctl_response( FTP_DCO_FAIL, "Connect Failure", session ) == CTRL_NOK ) return CTRL_NOK;
 				sock_graceful_shutdown( &session->data_sock );
