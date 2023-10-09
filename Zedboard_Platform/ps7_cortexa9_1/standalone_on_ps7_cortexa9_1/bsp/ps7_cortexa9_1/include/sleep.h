@@ -22,8 +22,14 @@
 * 		      u32 to fix misra_c_2012_directive_4_6 violation.
 * 7.7	sk   01/10/22 Modify the return type of sleep_R5 and usleep_R5 from
 * 		      unsigned to void to fix misra_c_2012_rule_17_7 violation.
-* 7.7	sk   03/02/22 Update usleep_R5 and usleep parameter types to fix misra_
+* 8.0	sk   03/02/22 Update usleep_R5 and usleep parameter types to fix misra_
 *		      c_2012_directive_4_6 violation.
+* 8.0	sk   03/17/22 Modify the return type of usleep_MB from int to void and
+*		      sleep_MB from unsigned to void to fix misra_c_2012_rule_
+*		      17_7 violation.
+* 8.0	sk   03/17/22 Modify sleep_MB parameter type from unsigned int to
+*		      u32 and usleep_MB parameter type from unsigned long to
+*		      ULONG to fix misra_c_2012_rule_4_6 violation.
 *
 * </pre>
 *
@@ -85,8 +91,8 @@ void usleep(ULONG useconds);
 void sleep(u32 seconds);
 void usleep_R5(ULONG useconds);
 void sleep_R5(u32 seconds);
-int usleep_MB(unsigned long useconds);
-unsigned sleep_MB(unsigned int seconds);
+void usleep_MB(ULONG useconds);
+void sleep_MB(u32 seconds);
 int usleep_A53(unsigned long useconds);
 unsigned sleep_A53(unsigned int seconds);
 int usleep_A9(unsigned long useconds);
