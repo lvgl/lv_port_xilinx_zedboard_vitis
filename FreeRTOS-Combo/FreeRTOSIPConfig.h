@@ -40,14 +40,16 @@ out the debugging messages. */
 
 #define ipconfigTCP_IP_SANITY 1
 
+#define uncMEMORY_SIZE	0x400000U	// 4 Megabyte for uncached with current configuration SD Card and Network Buffers = 2298140 Bytes
+										// Be sure to increase this should you require more than 4MB uncached data memory allocated by
+										// pucGetUncachedMemory() function.
+
 /* Define the byte order of the target MCU (the MCU FreeRTOS+TCP is executing
  * on).  Valid options are pdFREERTOS_BIG_ENDIAN and pdFREERTOS_LITTLE_ENDIAN. */
 #define ipconfigBYTE_ORDER                         pdFREERTOS_LITTLE_ENDIAN
 
 #define ipconfigPHY_LS_HIGH_CHECK_TIME_MS				( 1000 )
 #define ipconfigPHY_LS_LOW_CHECK_TIME_MS					( 1000 )
-#define PHY_LS_HIGH_CHECK_TIME_MS						( 1000 )
-#define PHY_LS_LOW_CHECK_TIME_MS							( 1000 )
 
 /* If the network card/driver includes checksum offloading (IP/TCP/UDP checksums)
  * then set ipconfigDRIVER_INCLUDED_RX_IP_CHECKSUM to 1 to prevent the software
@@ -335,8 +337,17 @@ out the debugging messages. */
 
 #define portINLINE                               __inline
 
+#define ipconfigMULTI_INTERFACE				1
+//#define ipconfigCOMPATIBLE_WITH_SINGLE		1
+#define ipconfigUSE_NTP_DEMO					0
+#define ipconfigSUPPORT_SIGNALS				0
+#define ipconfigUSE_IPv6						0 /* 1 */
+#define ipconfigUSE_RA						0 /* 1 */
+//#define ipconfigIPv4_BACKWARD_COMPATIBLE		1
+
+/*
 void vApplicationMQTTGetKeys( const char ** ppcRootCA,
                               const char ** ppcClientCert,
-                              const char ** ppcClientPrivateKey );
+                              const char ** ppcClientPrivateKey );*/
 
 #endif /* FREERTOS_IP_CONFIG_H */
