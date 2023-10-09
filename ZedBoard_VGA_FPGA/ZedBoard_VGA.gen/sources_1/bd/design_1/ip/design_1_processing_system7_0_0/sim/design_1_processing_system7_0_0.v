@@ -288,7 +288,7 @@ input PS_SRSTB;
 input PS_CLK;
 input PS_PORB;
 
-  processing_system7_vip_v1_0_14 #(
+  processing_system7_vip_v1_0_16 #(
     .C_USE_M_AXI_GP0(1),
     .C_USE_M_AXI_GP1(0),
     .C_USE_S_AXI_ACP(0),

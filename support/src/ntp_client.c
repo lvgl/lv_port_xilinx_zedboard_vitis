@@ -51,7 +51,7 @@ void set_time_from_NTP_task( void *is_task ) {
 
 	memset( (char*)&serv_addr, 0, sizeof(serv_addr) );
 	serv_addr.sin_family = FREERTOS_AF_INET;
-	serv_addr.sin_addr = serv_ip;
+	serv_addr.sin_address.ulIP_IPv4 = serv_ip;
 	serv_addr.sin_port = FreeRTOS_htons( NTP_PORT );
 
 	for( master_retry = 0; master_retry < NTP_RETRIES; master_retry++ ) {

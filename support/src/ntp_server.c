@@ -12,7 +12,6 @@
 #include "network.h"
 
 extern config_datp_t		conf_p;
-extern shared_memp_t		shmem_p;
 extern cpu0_globals_t		*cpu0_globals;
 
 static int ntp_reply( Socket_t sock, struct freertos_sockaddr *cl_addrp, socklen_t cl_addrlen, struct ntp_packet *recv_pkt, struct timeval *recv_time) {
@@ -111,7 +110,7 @@ reset:
 	}
 
 	server_addr.sin_family = FREERTOS_AF_INET;
-	server_addr.sin_addr = 0;
+	server_addr.sin_address.ulIP_IPv4 = 0;
 	server_addr.sin_port = FreeRTOS_htons( NTP_PORT );
 
 	if( FreeRTOS_bind( listen_sock, &server_addr, sizeof(server_addr) ) < 0 ) {

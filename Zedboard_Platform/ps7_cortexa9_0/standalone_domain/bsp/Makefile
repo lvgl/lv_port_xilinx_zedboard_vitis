@@ -29,7 +29,7 @@ par_libs: $(addsuffix /make.libs,$(PAR_SUBDIRS))
 	@echo 'Finished building libraries parallelly.'
 
 archive:
-	arm-none-eabi-ar -r  $(LIBRARIES) $(wildcard $(PROCESSOR)/lib/*.o)
+	arm-none-eabi-ar -r  $(LIBRARIES) $(sort $(wildcard $(PROCESSOR)/lib/*.o))
 
 clean: $(addsuffix /make.clean,$(SUBDIRS))
 	rm -f ${PROCESSOR}/lib/libxil.a

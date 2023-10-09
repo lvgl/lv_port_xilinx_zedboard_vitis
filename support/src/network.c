@@ -33,7 +33,8 @@ void sock_graceful_shutdown( Socket_t *sock ) {
 	*sock = FREERTOS_INVALID_SOCKET;
 }
 
-void vApplicationIPNetworkEventHook( eIPCallbackEvent_t eNetworkEvent ) {		// This function is called after the IP stack is up and running
+// This function is called after the IP stack is up and running
+void vApplicationIPNetworkEventHook_Multi( eIPCallbackEvent_t eNetworkEvent, struct xNetworkEndPoint *pxEndPoint ) {
 
 	sysmsg_q_t	msg = { 0, pdFALSE, NULL };
 	static BaseType_t	xTasksAlreadyCreated = pdFALSE;
@@ -51,7 +52,8 @@ void vApplicationIPNetworkEventHook( eIPCallbackEvent_t eNetworkEvent ) {		// Th
              */
 
             xTasksAlreadyCreated = pdTRUE;
-            FreeRTOS_GetAddressConfiguration( &ulIPAddress, &ulNetMask, &ulGatewayAddress, &ulDNSServerAddress );
+            FreeRTOS_GetEndPointConfiguration( &ulIPAddress, &ulNetMask, &ulGatewayAddress, &ulDNSServerAddress,
+              pxEndPoint );
 			FreeRTOS_inet_ntoa( ulIPAddress, cBuffer );
 			printf( "IP Address: %s\r\n", cBuffer );
 			FreeRTOS_inet_ntoa( ulNetMask, cBuffer );

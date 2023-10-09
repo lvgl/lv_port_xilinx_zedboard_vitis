@@ -21,6 +21,8 @@ cpu0_globals_t			*cpu0_globals;				/* A global structure which contains all nece
 XScuGic					xInterruptController; 	/* Interrupt controller instance */
 FF_Disk_t				*pxSDDisk;
 
+extern NetworkInterface_t * pxZynq_FillInterfaceDescriptor( BaseType_t xEMACIndex, NetworkInterface_t * pxInterface );
+
 static void startup_thread( void *p );	/* Thread is used to initialise RTOS etc. */
 
 int main() {
@@ -127,11 +129,14 @@ static void startup_thread( void *p ) {
 		msg.id = CPU1_OK;
 	}
 	q_sysmsg( &msg );
-
 	/* Initialise the network interface */
-	FreeRTOS_IPInit( (uint8_t*)&conf_p->Sys_IP, (uint8_t*)&conf_p->Sys_nm, (uint8_t*)&conf_p->Sys_gw, (uint8_t*)&conf_p->Sys_DNS, conf_p->softmac_addr );
+	pxZynq_FillInterfaceDescriptor( 0, &cpu0_globals->tcpip.Interfaces[0] );
+	FreeRTOS_FillEndPoint( &cpu0_globals->tcpip.Interfaces[0], &cpu0_globals->tcpip.EndPoints[0], (uint8_t*)&conf_p->Sys_IP,
+	  (uint8_t*)&conf_p->Sys_nm, (uint8_t*)&conf_p->Sys_gw, (uint8_t*)&conf_p->Sys_DNS, conf_p->softmac_addr );
+	FreeRTOS_IPInit_Multi();
+
 	retry = NET_WAIT;	/* Wait to see if network interface comes up */
-	while((!( FreeRTOS_IsNetworkUp() && cpu0_globals->net_started && xGetPhyLinkStatus() )) && --retry ) vTaskDelay(pdMS_TO_TICKS(10));
+	while((!( FreeRTOS_IsNetworkUp() && cpu0_globals->net_started && GetPhyLinkStatus(&cpu0_globals->tcpip.Interfaces[0]) )) && --retry ) vTaskDelay(pdMS_TO_TICKS(10));
 
 	if( retry ) {
 		/* If the network is up attempt to update local time from Internet */
@@ -171,7 +176,7 @@ void sys_mngr0( void *p ) {
 
 	while(1) {
 		// This parameter is in hours
-		if( FreeRTOS_IsNetworkUp() && cpu0_globals->net_started && xGetPhyLinkStatus() ) {
+		if( FreeRTOS_IsNetworkUp() && cpu0_globals->net_started && GetPhyLinkStatus(&cpu0_globals->tcpip.Interfaces[0]) ) {
 			if( (!(cntr % (time_t)(conf_p->Sys_NTP_update * 3.6E6 / SYSMNGR_LOOP_TIME)) && conf_p->Sys_NTP_update) ) {	// If enabled update time periodically
 				msg.id = SPAWN_NTPC;
 				q_spawn_req( &msg );

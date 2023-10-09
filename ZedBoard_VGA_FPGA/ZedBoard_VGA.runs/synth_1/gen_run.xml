@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1667822311" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/design_1_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1696844267" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/design_1_wrapper.dcp">
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="design_1_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="design_1_wrapper_reports.tcl"/>
@@ -33,7 +33,7 @@
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
-  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/new/Zedboard_VGA_constraints.xdc">
       <FileInfo>
@@ -45,7 +45,7 @@
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
-  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
     <File Path="$PSRCDIR/utils_1/imports/synth_1/design_1_wrapper.dcp">
       <FileInfo>

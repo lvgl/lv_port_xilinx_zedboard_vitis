@@ -1,6 +1,7 @@
 /******************************************************************************/
 /**
 * Copyright (c) 2019 - 2022  Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2022 - 2023 Advanced Micro Devices, Inc.  All rights reserved.
 * SPDX-License-Identifier: MIT
 ******************************************************************************/
 
@@ -51,7 +52,15 @@
 * 7.7	sk	 01/10/22 Update functions return type to fix misra_c_2012_
 * 			  directive_4_6 violations.
 *      mmd       02/28/22 Added Xil_SMemMove function prototype
-*
+* 8.0  adk       04/18/22 Added Xil_WaitForEventSet function prototype.
+*      ssc       08/25/22 Added Xil_SecureRMW32 prototype
+* 8.1  sa        09/29/22 Change the type of first argument passed to Xil_WaitForEvent
+*			  API from u32 to UINTPTR for supporting 64 bit addressing.
+* 8.1  sa        10/20/22 Change the type of first argument passed to Xil_WaitForEvents
+*                         API from u32 to UINTPTR for supporting 64 bit addressing.
+* 8.1  akm       01/02/23 Added Xil_RegisterPlmHandler() & Xil_PlmStubHandler() APIs.
+*      bm        03/14/23 Added XSECURE_REDUNDANT_CALL and XSECURE_REDUNDANT_IMPL macros
+*      sk        03/14/23 Added Status Check Glitch detect Macro
 * </pre>
 *
 *****************************************************************************/
@@ -121,16 +130,79 @@ extern "C" {
  ******************************************************************************/
 #define XSECURE_TEMPORAL_CHECK(Label, Status, Function, ...)   \
 	{ \
-		volatile int StatusTmp = XST_FAILURE; \
+		volatile int StatusTmp; \
 		XSECURE_TEMPORAL_IMPL(Status, StatusTmp, Function, __VA_ARGS__); \
 		if ((Status != XST_SUCCESS) || \
 			(StatusTmp != XST_SUCCESS)) { \
-			Status |= StatusTmp;\
+			if (((Status) != (StatusTmp)) || \
+				(Status == XST_SUCCESS)) { \
+				Status = XST_GLITCH_ERROR; \
+			}\
 			goto Label; \
 		} \
 	 }
-#endif
 
+/******************************************************************************/
+/**
+ *
+ * Adds redundancy to the function call. This is to avoid glitches which can skip
+ * a function call and cause altering of the code flow in security critical
+ * functions.
+ *
+ * @param	Status is the variable which holds the return value of
+ *		function executed
+ * @param	StatusTmp is the variable which holds the return value of
+ *		redundant function call executed
+ * @param	Function is the function to be executed
+ * @param	Other params are arguments to the called function
+ *
+ * @return	None
+ *
+ ******************************************************************************/
+#define XSECURE_REDUNDANT_CALL(Status, StatusTmp, Function, ...)   \
+	{ \
+		Status = Function(__VA_ARGS__); \
+		StatusTmp = Function(__VA_ARGS__); \
+	 }
+
+/******************************************************************************/
+/**
+ *
+ * Adds redundancy to the function call. This is to avoid glitches which can skip
+ * a function call and cause altering of the code flow in security critical
+ * functions.
+ *
+ * @param	Function is the function to be executed
+ * @param	Other params are arguments to the called function
+ *
+ * @return	None
+ *
+ ******************************************************************************/
+#define XSECURE_REDUNDANT_IMPL(Function, ...)   \
+	{ \
+		Function(__VA_ARGS__); \
+		Function(__VA_ARGS__); \
+	 }
+
+/******************************************************************************/
+/**
+ *
+ * This Macro helps to detect glitches skipping the Status check
+ * in case of error.
+ *
+ * @param 	None
+ *
+ * @return	None
+ *
+ ******************************************************************************/
+#define XSECURE_STATUS_CHK_GLITCH_DETECT(Status)   \
+	{ \
+		if (Status == XST_SUCCESS) { \
+			Status = (int)XST_GLITCH_ERROR; \
+		} \
+	}
+
+#endif
 /*************************** Function Prototypes ******************************/
 /* Ceils the provided float value */
 s32 Xil_Ceil(float Value);
@@ -141,11 +213,19 @@ u32 Xil_ConvertCharToNibble(u8 InChar, u8 *Num);
 /* Convert input hex string to array of 32-bits integers */
 u32 Xil_ConvertStringToHex(const char *Str, u32 *buf, u8 Len);
 
+#ifdef VERSAL_PLM
+/* Register PLM handler */
+void Xil_RegisterPlmHandler(void (*PlmAlive) (void));
+
+/* Call PLM handler */
+void Xil_PlmStubHandler(void);
+#endif
+
 /* Waits for specified event */
-u32 Xil_WaitForEvent(u32 RegAddr, u32 EventMask, u32 Event, u32 Timeout);
+u32 Xil_WaitForEvent(UINTPTR RegAddr, u32 EventMask, u32 Event, u32 Timeout);
 
 /* Waits for specified events */
-u32 Xil_WaitForEvents(u32 EventsRegAddr, u32 EventsMask, u32 WaitEvents,
+u32 Xil_WaitForEvents(UINTPTR EventsRegAddr, u32 EventsMask, u32 WaitEvents,
 			 u32 Timeout, u32* Events);
 
 /* Validate input hex character */
@@ -221,6 +301,12 @@ int Xil_SStrCmp_CT (const u8 *Str1, const u32 Str1Size,
 /* Concatenates source string to destination string */
 int Xil_SStrCat (u8 *DestStr, const u32 DestSize,
 	const u8 *SrcStr, const u32 SrcSize);
+
+/* Waits for event timeout */
+u32 Xil_WaitForEventSet(u32 Timeout, u32 NumOfEvents, volatile u32 *EventAddr, ...);
+
+/* Implements Read Modify Writes securely */
+s32 Xil_SecureRMW32(UINTPTR Addr, u32 Mask, u32 Value);
 
 #ifdef __cplusplus
 }

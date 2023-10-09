@@ -23,7 +23,6 @@
 
 /* Externals here */
 extern shared_memp_t 		shmem_p;					/* Memory shared between CPUs    */
-extern XScuGic 				xInterruptController; 	/* Interrupt controller instance */
 extern cpu0_globals_t		*cpu0_globals;				/* A global structure which contains all necessary global variables */
 
 /* Globals here */

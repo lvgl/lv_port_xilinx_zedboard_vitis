@@ -135,6 +135,17 @@ struct gui_globals {
 	volatile uint8_t		colour_changed : 2;
 
 };
+
+#define		TCPIP_INTERFACES	1
+#define		TCPIP_ENDPOINTS	1
+#define		GetPhyLinkStatus	cpu0_globals->tcpip.Interfaces[0].pfGetPhyLinkStatus
+
+struct ip_stack_data {
+
+	NetworkInterface_t			Interfaces[ TCPIP_INTERFACES ];
+	NetworkEndPoint_t			EndPoints[ TCPIP_ENDPOINTS ];
+};
+
 /* CPU0 global struct */
 typedef struct _cpu0_globals {
 
@@ -144,6 +155,7 @@ typedef struct _cpu0_globals {
 	struct gui_globals		gui;
 	struct usb_data			usb;
 	struct ntp_s			ntp;
+	struct ip_stack_data	tcpip;
 	uint8_t					net_started;
 
 } cpu0_globals_t;

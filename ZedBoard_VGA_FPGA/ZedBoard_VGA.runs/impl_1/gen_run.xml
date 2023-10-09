@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1667822311">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1696844267">
   <File Type="ROUTE-PWR" Name="design_1_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="design_1_wrapper_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="design_1_wrapper_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="design_1_wrapper_rqa_opted.pb"/>
   <File Type="BITSTR-MMI" Name="design_1_wrapper.mmi"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="design_1_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="design_1_wrapper_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="design_1_wrapper_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="design_1_wrapper_reports.tcl"/>
   <File Type="OPT-TIMING" Name="design_1_wrapper_timing_summary_opted.rpt"/>
   <File Type="OPT-DCP" Name="design_1_wrapper_opt.dcp"/>
   <File Type="OPT-DRC" Name="design_1_wrapper_drc_opted.rpt"/>
@@ -24,6 +25,8 @@
   <File Type="PLACE-PRE-SIMILARITY" Name="design_1_wrapper_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BIN" Name="design_1_wrapper.bin"/>
   <File Type="PLACE-TIMING" Name="design_1_wrapper_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="design_1_wrapper_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="design_1_wrapper_rqa_placed.pb"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="design_1_wrapper_postplace_pwropt.dcp"/>
   <File Type="BITSTR-MSK" Name="design_1_wrapper.msk"/>
   <File Type="POSTPLACE-PWROPT-TIMING" Name="design_1_wrapper_timing_summary_postplace_pwropted.rpt"/>
@@ -40,7 +43,7 @@
   <File Type="ROUTE-METHODOLOGY-DRC" Name="design_1_wrapper_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="design_1_wrapper_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="design_1_wrapper_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="design_1_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="design_1_wrapper_rqs_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="design_1_wrapper_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="design_1_wrapper_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="design_1_wrapper_timing_summary_routed.rpt"/>
@@ -63,6 +66,8 @@
   <File Type="BITSTR-NKY" Name="design_1_wrapper.nky"/>
   <File Type="BITSTR-BMM" Name="design_1_wrapper_bd.bmm"/>
   <File Type="PDI-FILE" Name="design_1_wrapper.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="design_1_wrapper_soc.pdi"/>
+  <File Type="PL-PDI-FILE" Name="design_1_wrapper_pld.pdi"/>
   <File Type="RCFI_FILE" Name="design_1_wrapper.rcfi"/>
   <File Type="CFI_FILE" Name="design_1_wrapper.cfi"/>
   <File Type="RNPI_FILE" Name="design_1_wrapper.rnpi"/>
@@ -103,7 +108,7 @@
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
-  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/new/Zedboard_VGA_constraints.xdc">
       <FileInfo>
@@ -115,7 +120,7 @@
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
-  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
     <File Path="$PSRCDIR/utils_1/imports/synth_1/design_1_wrapper.dcp">
       <FileInfo>
@@ -146,8 +151,8 @@
       <Option Id="Directive">0</Option>
     </Step>
     <Step Id="route_design">
-      <Option Id="MoreOptsStr"><![CDATA[-tns_cleanup]]></Option>
       <Option Id="Directive">0</Option>
+      <Option Id="MoreOptsStr"><![CDATA[-tns_cleanup]]></Option>
     </Step>
     <Step Id="post_route_phys_opt_design" EnableStepBool="1">
       <Option Id="Directive">0</Option>

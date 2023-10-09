@@ -1,21 +1,21 @@
--- (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-- (c) Copyright 2022-2023 Advanced Micro Devices, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
--- of Xilinx, Inc. and is protected under U.S. and
--- international copyright and other intellectual property
--- laws.
+-- of AMD and is protected under U.S. and international copyright
+-- and other intellectual property laws.
 -- 
 -- DISCLAIMER
 -- This disclaimer is not a license and does not grant any
 -- rights to the materials distributed herewith. Except as
 -- otherwise provided in a valid license issued to you by
--- Xilinx, and to the maximum extent permitted by applicable
+-- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
 -- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
--- (2) Xilinx shall not be liable (whether in contract or tort,
+-- (2) AMD shall not be liable (whether in contract or tort,
 -- including negligence, or under any other theory of
 -- liability) for any loss or damage of any kind or nature
 -- related to, arising under or in connection with these
@@ -24,11 +24,11 @@
 -- (including loss of data, profits, goodwill, or any type of
 -- loss or damage suffered as a result of any action brought
 -- by a third party) even if such damage or loss was
--- reasonably foreseeable or Xilinx had been advised of the
+-- reasonably foreseeable or AMD had been advised of the
 -- possibility of the same.
 -- 
 -- CRITICAL APPLICATIONS
--- Xilinx products are not designed or intended to be fail-
+-- AMD products are not designed or intended to be fail-
 -- safe, or for use in any application requiring fail-safe
 -- performance, such as life-support or safety devices or
 -- systems, Class III medical devices, nuclear facilities,
@@ -37,7 +37,7 @@
 -- injury, or severe property or environmental damage
 -- (individually and collectively, "Critical
 -- Applications"). Customer assumes the sole risk and
--- liability of any use of Xilinx products in Critical
+-- liability of any use of AMD products in Critical
 -- Applications, subject only to applicable laws and
 -- regulations governing limitations on product liability.
 -- 
@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:axi_gpio:2.0
--- IP Revision: 28
+-- IP Revision: 30
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY axi_gpio_v2_0_28;
-USE axi_gpio_v2_0_28.axi_gpio;
+LIBRARY axi_gpio_v2_0_30;
+USE axi_gpio_v2_0_30.axi_gpio;
 
 ENTITY design_1_axi_gpio_0_0 IS
   PORT (
@@ -133,11 +133,11 @@ ARCHITECTURE design_1_axi_gpio_0_0_arch OF design_1_axi_gpio_0_0 IS
     );
   END COMPONENT axi_gpio;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF design_1_axi_gpio_0_0_arch: ARCHITECTURE IS "axi_gpio,Vivado 2022.1";
+  ATTRIBUTE X_CORE_INFO OF design_1_axi_gpio_0_0_arch: ARCHITECTURE IS "axi_gpio,Vivado 2023.1";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_axi_gpio_0_0_arch : ARCHITECTURE IS "design_1_axi_gpio_0_0,axi_gpio,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_axi_gpio_0_0_arch: ARCHITECTURE IS "design_1_axi_gpio_0_0,axi_gpio,{x_ipProduct=Vivado 2022.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_gpio,x_ipVersion=2.0,x_ipCoreRevision=28,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_S_AXI_ADDR_WIDTH=9,C_S_AXI_DATA_WIDTH=32,C_GPIO_WIDTH=5,C_GPIO2_WIDTH=32,C_ALL_INPUTS=1,C_ALL_INPUTS_2=0,C_ALL_OUTPUTS=0,C_ALL_OUTPUTS_2=0,C_INTERRUPT_PRESENT=1,C_DOUT_DEFAULT=0x00000000,C_TRI_DEFAULT=0xFFFFFFFF,C_IS_DUAL=0,C_DOUT_DEFAULT_2=0x00000000,C_TRI_DEFAULT_2=0xFFFFFFFF}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_axi_gpio_0_0_arch: ARCHITECTURE IS "design_1_axi_gpio_0_0,axi_gpio,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_gpio,x_ipVersion=2.0,x_ipCoreRevision=30,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_S_AXI_ADDR_WIDTH=9,C_S_AXI_DATA_WIDTH=32,C_GPIO_WIDTH=5,C_GPIO2_WIDTH=32,C_ALL_INPUTS=1,C_ALL_INPUTS_2=0,C_ALL_OUTPUTS=0,C_ALL_OUTPUTS_2=0,C_INTERRUPT_PRESENT=1,C_DOUT_DEFAULT=0x00000000,C_TRI_DEFAULT=0xFFFFFFFF,C_IS_DUAL=0,C_DOUT_DEFAULT_2=0x00000000,C_TRI_DEFAULT_2=0xFFFFFFFF}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF gpio_io_i: SIGNAL IS "XIL_INTERFACENAME GPIO, BOARD.ASSOCIATED_PARAM GPIO_BOARD_INTERFACE";

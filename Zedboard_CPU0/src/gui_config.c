@@ -127,7 +127,7 @@ static uint8_t update_sys_cfg( void ) {
 		if( conf_p->Sys_IP != addr ) {
 			conf_p->Sys_IP = addr;
 			update = pdTRUE;
-			FreeRTOS_SetAddressConfiguration( &addr, NULL, NULL, NULL  );
+			FreeRTOS_SetEndPointConfiguration( &addr, NULL, NULL, NULL, &cpu0_globals->tcpip.EndPoints[0] );
 		}
 	} else {
 		msg.id = ERR_INVALID_IP;
@@ -137,7 +137,7 @@ static uint8_t update_sys_cfg( void ) {
 		if( conf_p->Sys_nm != addr ) {
 			conf_p->Sys_nm = addr;
 			update = pdTRUE;
-			FreeRTOS_SetAddressConfiguration( NULL, &addr, NULL, NULL  );
+			FreeRTOS_SetEndPointConfiguration( NULL, &addr, NULL, NULL, &cpu0_globals->tcpip.EndPoints[0] );
 		}
 	} else {
 		msg.id = ERR_INVALID_NM;
@@ -147,7 +147,7 @@ static uint8_t update_sys_cfg( void ) {
 		if( conf_p->Sys_gw != addr ) {
 			conf_p->Sys_gw = addr;
 			update = pdTRUE;
-			FreeRTOS_SetAddressConfiguration( NULL, NULL, &addr, NULL  );
+			FreeRTOS_SetEndPointConfiguration( NULL, NULL, &addr, NULL, &cpu0_globals->tcpip.EndPoints[0] );
 		}
 	} else {
 		msg.id = ERR_INVALID_GW;
@@ -157,7 +157,7 @@ static uint8_t update_sys_cfg( void ) {
 		if( conf_p->Sys_DNS != addr ) {
 			conf_p->Sys_DNS = addr;
 			update = pdTRUE;
-			FreeRTOS_SetAddressConfiguration( NULL, NULL, NULL, &addr  );
+			FreeRTOS_SetEndPointConfiguration( NULL, NULL, NULL, &addr, &cpu0_globals->tcpip.EndPoints[0] );
 		}
 	} else {
 		msg.id = ERR_INVALID_DNS;

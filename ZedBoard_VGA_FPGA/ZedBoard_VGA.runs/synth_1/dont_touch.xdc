@@ -12,12 +12,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ax
 # IP: bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_processing_system7_0_0 || ORIG_REF_NAME==design_1_processing_system7_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xbar_0 || ORIG_REF_NAME==design_1_xbar_0} -quiet] -quiet
-
-# IP: bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_0 || ORIG_REF_NAME==design_1_auto_pc_0} -quiet] -quiet
-
 # IP: bd/design_1/ip/design_1_ps7_0_axi_periph_0/design_1_ps7_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ps7_0_axi_periph_0 || ORIG_REF_NAME==design_1_ps7_0_axi_periph_0} -quiet] -quiet
 
@@ -29,12 +23,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xl
 
 # IP: bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xlconstant_0_0 || ORIG_REF_NAME==design_1_xlconstant_0_0} -quiet] -quiet
-
-# IP: bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_1 || ORIG_REF_NAME==design_1_auto_pc_1} -quiet] -quiet
-
-# IP: bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_us_0 || ORIG_REF_NAME==design_1_auto_us_0} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_axi_mem_intercon_0/design_1_axi_mem_intercon_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_0 || ORIG_REF_NAME==design_1_axi_mem_intercon_0} -quiet] -quiet
@@ -72,6 +60,18 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_Ze
 # IP: e:/ZeboardTemplate/Zed_Git/ZedBoard_VGA_FPGA/ZedBoard_VGA.gen/sources_1/bd/design_1/ip/design_1_Zedboard_OLED_v1_0_0_0/charLib/charLib.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==charLib || ORIG_REF_NAME==charLib} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xbar_0 || ORIG_REF_NAME==design_1_xbar_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_0 || ORIG_REF_NAME==design_1_auto_pc_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_us_0 || ORIG_REF_NAME==design_1_auto_us_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_1 || ORIG_REF_NAME==design_1_auto_pc_1} -quiet] -quiet
+
 # XDC: e:/ZeboardTemplate/Zed_Git/ZedBoard_VGA_FPGA/ZedBoard_VGA.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_axi_gpio_0_0 || ORIG_REF_NAME==design_1_axi_gpio_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
@@ -83,20 +83,11 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 # XDC: e:/ZeboardTemplate/Zed_Git/ZedBoard_VGA_FPGA/ZedBoard_VGA.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_processing_system7_0_0 || ORIG_REF_NAME==design_1_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: e:/ZeboardTemplate/Zed_Git/ZedBoard_VGA_FPGA/ZedBoard_VGA.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc
-
 # XDC: e:/ZeboardTemplate/Zed_Git/ZedBoard_VGA_FPGA/ZedBoard_VGA.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_rst_ps7_0_100M_0 || ORIG_REF_NAME==design_1_rst_ps7_0_100M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: e:/ZeboardTemplate/Zed_Git/ZedBoard_VGA_FPGA/ZedBoard_VGA.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_rst_ps7_0_100M_0 || ORIG_REF_NAME==design_1_rst_ps7_0_100M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
-
-# XDC: e:/ZeboardTemplate/Zed_Git/ZedBoard_VGA_FPGA/ZedBoard_VGA.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc
-
-# XDC: e:/ZeboardTemplate/Zed_Git/ZedBoard_VGA_FPGA/ZedBoard_VGA.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_auto_us_0 || ORIG_REF_NAME==design_1_auto_us_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: e:/ZeboardTemplate/Zed_Git/ZedBoard_VGA_FPGA/ZedBoard_VGA.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc
 
 # XDC: e:/ZeboardTemplate/Zed_Git/ZedBoard_VGA_FPGA/ZedBoard_VGA.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_200M_0/design_1_rst_ps7_0_200M_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_rst_ps7_0_200M_0 || ORIG_REF_NAME==design_1_rst_ps7_0_200M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
@@ -105,5 +96,14 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_rst_ps7_0_200M_0 || ORIG_REF_NAME==design_1_rst_ps7_0_200M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: e:/ZeboardTemplate/Zed_Git/ZedBoard_VGA_FPGA/ZedBoard_VGA.gen/sources_1/bd/design_1/ip/design_1_Zedboard_OLED_v1_0_0_0/charLib/charLib_ooc.xdc
+
+# XDC: e:/ZeboardTemplate/Zed_Git/ZedBoard_VGA_FPGA/ZedBoard_VGA.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc
+
+# XDC: e:/ZeboardTemplate/Zed_Git/ZedBoard_VGA_FPGA/ZedBoard_VGA.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_auto_us_0 || ORIG_REF_NAME==design_1_auto_us_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: e:/ZeboardTemplate/Zed_Git/ZedBoard_VGA_FPGA/ZedBoard_VGA.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc
+
+# XDC: e:/ZeboardTemplate/Zed_Git/ZedBoard_VGA_FPGA/ZedBoard_VGA.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc
 
 # XDC: e:/ZeboardTemplate/Zed_Git/ZedBoard_VGA_FPGA/ZedBoard_VGA.gen/sources_1/bd/design_1/design_1_ooc.xdc

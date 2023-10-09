@@ -185,7 +185,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>POLARITY</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXI_ARESETN.POLARITY" spirit:choiceRef="choice_list_74b5137e">ACTIVE_LOW</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXI_ARESETN.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
@@ -233,7 +233,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>SENSITIVITY</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.CPU0_IRQ.SENSITIVITY" spirit:choiceRef="choice_list_9ca20931">LEVEL_HIGH</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CPU0_IRQ.SENSITIVITY" spirit:choiceRef="choice_list_99a1d2b9">LEVEL_HIGH</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
@@ -255,7 +255,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>SENSITIVITY</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.CPU1_IRQ.SENSITIVITY" spirit:choiceRef="choice_list_9ca20931">LEVEL_HIGH</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CPU1_IRQ.SENSITIVITY" spirit:choiceRef="choice_list_99a1d2b9">LEVEL_HIGH</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
@@ -669,16 +669,16 @@
   </spirit:model>
   <spirit:choices>
     <spirit:choice>
-      <spirit:name>choice_list_74b5137e</spirit:name>
-      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
-      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
-      <spirit:name>choice_list_9ca20931</spirit:name>
+      <spirit:name>choice_list_99a1d2b9</spirit:name>
       <spirit:enumeration>LEVEL_HIGH</spirit:enumeration>
       <spirit:enumeration>LEVEL_LOW</spirit:enumeration>
       <spirit:enumeration>EDGE_RISING</spirit:enumeration>
       <spirit:enumeration>EDGE_FALLING</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
     </spirit:choice>
   </spirit:choices>
   <spirit:fileSets>
@@ -735,12 +735,12 @@
       <xilinx:displayName>ZedBoard_InterCPU_IRQ_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
       <xilinx:vendorDisplayName>PJBES</xilinx:vendorDisplayName>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2022-09-22T12:53:43Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2023-10-09T09:30:43Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2022.1</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="c722511c"/>
+      <xilinx:xilinxVersion>2023.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="5e8b4308"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="1c122240"/>
       <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="db2cba5c"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="5d6352ea"/>

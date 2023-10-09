@@ -54,7 +54,7 @@
 #define _xlconstant_v1_1_7_H_
 
 #include "systemc.h"
-template<int CONST_WIDTH,int CONST_VAL>
+template<int CONST_WIDTH,long int CONST_VAL>
 SC_MODULE(xlconstant_v1_1_7) {
   public:
   sc_out< sc_bv<CONST_WIDTH> > dout;

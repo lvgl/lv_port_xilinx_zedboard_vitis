@@ -16,7 +16,7 @@
 * ----- ---- -------- ---------------------------------------------------
 * 1.00a ecm  10/20/10 Initial version, moved over from bsp area
 * 6.0   mus  07/27/16 Consolidated vectors for a9,a53 and r5 processors
-* 7.7	sk   03/02/22 Update _VECTORS_H_ with VECTORS_H_ to fix misra_c_
+* 8.0	sk   03/02/22 Update _VECTORS_H_ with VECTORS_H_ to fix misra_c_
 * 		      2012_rule_21_1 violation.
 * </pre>
 *

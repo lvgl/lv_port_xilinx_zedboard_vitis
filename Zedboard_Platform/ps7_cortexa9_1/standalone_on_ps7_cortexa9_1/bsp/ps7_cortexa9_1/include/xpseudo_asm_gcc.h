@@ -1,5 +1,6 @@
 /******************************************************************************
-* Copyright (c) 2014 - 2021 Xilinx, Inc.  All rights reserved.
+* Copyright (c) 2014 - 2022 Xilinx, Inc.  All rights reserved.
+* Copyright (c) 2022 - 2023 Advanced Micro Devices, Inc. All rights reserved.
 * SPDX-License-Identifier: MIT
 ******************************************************************************/
 
@@ -20,6 +21,8 @@
 * 6.0   mus      07/27/16 Consolidated file for a53,a9 and r5 processors
 * 7.2   asa      04/03/20 Renamed the str macro to strw.
 * 7.2   dp       04/30/20 Added clobber "cc" to mtcpsr for aarch32 processors
+* 8.0   mus      02/24/22 Added macro mfcpnotoken and mtcpnotoken.
+* 8.1   asa      02/13/23 Create macros to read ESR, FAR and ELR registers.
 * </pre>
 *
 ******************************************************************************/
@@ -34,6 +37,7 @@
 /***************************** Include Files ********************************/
 
 #include "xil_types.h"
+#include "bspconfig.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -100,10 +104,39 @@ extern "C" {
 			  rval;\
 			 })
 
+#if (EL3 == 1)
 #define mfelrel3() ({u64 rval = 0U; \
                    asm volatile("mrs %0,  ELR_EL3" : "=r" (rval));\
                   rval;\
                  })
+#define mfesrel3() ({u64 rval = 0U; \
+                   asm volatile("mrs %0,  ESR_EL3" : "=r" (rval));\
+                  rval;\
+                 })
+
+#define mffarel3() ({u64 rval = 0U; \
+                   asm volatile("mrs %0,  FAR_EL3" : "=r" (rval));\
+                  rval;\
+                 })
+
+#else
+#define mfelrel1() ({u64 rval = 0U; \
+                   asm volatile("mrs %0,  ELR_EL1" : "=r" (rval));\
+                  rval;\
+                 })
+
+#define mfesrel1() ({u64 rval = 0U; \
+                   asm volatile("mrs %0,  ESR_EL1" : "=r" (rval));\
+                  rval;\
+                 })
+
+#define mffarel1() ({u64 rval = 0U; \
+                   asm volatile("mrs %0,  FAR_EL1" : "=r" (rval));\
+                  rval;\
+                 })
+
+
+#endif
 
 #define mtelrel3(v) __asm__ __volatile__ ("msr ELR_EL3, %0" : : "r" (v))
 
@@ -207,7 +240,13 @@ extern "C" {
 			rval;\
 			})
 
+#define mfcpnotoken(reg)       ({u64 rval = 0U;\
+                        __asm__ __volatile__("mrs       %0, " reg : "=r" (rval));\
+                        rval;\
+                        })
+
 #define mtcp(reg,val)	__asm__ __volatile__("msr " #reg ",%0"  : : "r" (val))
+#define mtcpnotoken(reg,val)	__asm__ __volatile__("msr " reg ",%0"  : : "r" (val))
 
 #else
 /* CP15 operations */
@@ -223,6 +262,12 @@ extern "C" {
 			 );\
 			 rval;\
 			 })
+
+#define mtcp2(rn, v)     __asm__ __volatile__(\
+                         "mcrr " rn "\n"\
+                         : : "r" (v), "r" (0)\
+                        );
+
 #endif
 
 /************************** Variable Definitions ****************************/

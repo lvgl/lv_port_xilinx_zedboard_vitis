@@ -4,11 +4,9 @@
 
 BEGIN OS
  PARAMETER OS_NAME = standalone
- PARAMETER OS_VER = 7.7
+ PARAMETER OS_VER = 8.1
  PARAMETER PROC_INSTANCE = ps7_cortexa9_1
  PARAMETER sleep_timer = ps7_globaltimer_0
- PARAMETER stdin = ps7_uart_1
- PARAMETER stdout = ps7_uart_1
 END
 
 

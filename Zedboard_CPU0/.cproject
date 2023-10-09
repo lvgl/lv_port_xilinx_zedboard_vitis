@@ -151,7 +151,7 @@
                             							
                             <tool id="xilinx.gnu.armv7.toolchain.archiver.1943938333" name="ARM v7 archiver" superClass="xilinx.gnu.armv7.toolchain.archiver"/>
                             							
-                            <tool id="xilinx.gnu.armv7.c.toolchain.linker.debug.487564393" name="ARM v7 gcc linker" superClass="xilinx.gnu.armv7.c.toolchain.linker.debug">
+                            <tool commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS} -Wl,--end-group " id="xilinx.gnu.armv7.c.toolchain.linker.debug.487564393" name="ARM v7 gcc linker" superClass="xilinx.gnu.armv7.c.toolchain.linker.debug">
                                 								
                                 <option id="xilinx.gnu.linker.inferred.swplatform.lpath.1725691305" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" valueType="libPaths">
                                     									
