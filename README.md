@@ -143,6 +143,7 @@ Select the ZedBoard_Platform[custom] entry in the table and hit 'OK'
 ![image](./rmassets/VitisCPerPIrok.png)  
 Hit 'Yes' on the next message box to continue.  
 ![image](./rmassets/VitisCPerPIok.png)  
+**Note: You may also need to change the path specified by CFG_TUSB_OS_INC_PATH in tusb_config.h to your own FreeRTOS-Kernel/include path.**
 
 ### ***6. Build all the projects under the Zedboard_System tree, libraries first, as follows:***
 - Build 'FreeRTOS-Combo'. (FreeRTOS combined Kernel/TCP/FAT library)
